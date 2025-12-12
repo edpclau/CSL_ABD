@@ -1,0 +1,168 @@
+﻿Clinician,From,To
+1,CRRT Therapy Type,Suspicion
+1,Ventilated,Suspicion
+1,Pulse,Suspicion
+1,DBP,Suspicion
+1,Temperature,Suspicion
+1,SpO2,Suspicion
+1,Lactate,Suspicion
+1,Lactate,Brain MRI
+1,ECMO Type,Suspicion
+1,ECMO Type,EEG
+1,Sodium,Suspicion
+1,Sodium,EEG
+1,Sodium,Head CT
+1,Base Deficit,Suspicion
+1,pH,Suspicion
+1,Chloride,Suspicion
+1,Potassium,Suspicion
+1,Creatinine,Suspicion
+1,INR,Suspicion
+1,Hemoglobin,Suspicion
+1,Platelets,Suspicion
+1,C-Reactive Protein,Suspicion
+1,Procalcitonin,Suspicion
+1,White blood cell count,Suspicion
+1,Hydromorphone,Suspicion
+1,Morphine,Suspicion
+1,Fentanyl,Suspicion
+1,Hydromorphone,Dexmedetomidine
+1,Morphine,Dexmedetomidine
+1,Fentanyl,Dexmedetomidine
+1,Behavioral Consult,Haloperidol
+1,Behavioral Consult,Olanzapine
+1,Behavioral Consult,Midazolam
+1,Midazolam,Lorazepam
+1,Lorazepam,Dexmedetomidine
+1,Behavioral Consult,Dexmedetomidine
+1,Haloperidol,Diagnosed
+1,Olanzapine,Diagnosed
+1,Midazolam,Diagnosed
+1,Dexmedetomidine,Diagnosed
+1,Pupillary Reaction,Suspicion
+1,Pupillary Reaction,Coma Score
+1,Pupillary Reaction,Head CT
+1,Coma Score,Suspicion
+1,Coma Score,Brain MRI
+1,Coma Score,Head CT
+1,Suspicion,Behavioral Consult
+1,Suspicion,EEG
+1,Suspicion,Brain MRI
+1,Suspicion,Head CT
+1,Behavioral Consult,Diagnosed
+1,EEG,Diagnosed
+1,Brain MRI,Diagnosed
+1,Head CT,Diagnosed
+2,Sodium,Head CT
+2,Lactate,Suspicion
+2,Cisatracurium,Suspicion
+2,Cisatracurium,EEG
+2,ECMO Type,EEG
+2,ECMO Type,Suspicion
+2,Pupillary Reaction,Head CT
+2,Pupillary Reaction,Coma Score
+2,Coma Score,Suspicion
+2,Coma Score,Brain MRI
+2,Coma Score,Head CT
+2,Hydromorphone,Dexmedetomidine
+2,Hydromorphone,Suspicion
+2,Morphine,Dexmedetomidine
+2,Morphine,Suspicion
+2,Fentanyl,Dexmedetomidine
+2,Fentanyl,Suspicion
+2,Suspicion,Behavioral Consult
+2,Suspicion,EEG
+2,Suspicion,Brain MRI
+2,Suspicion,Head CT
+2,Behavioral Consult,Diagnosed
+2,EEG,Diagnosed
+2,Brain MRI,Diagnosed
+2,Head CT,Diagnosed
+2,Behavioral Consult,Dexmedetomidine
+2,Behavioral Consult,Haloperidol
+2,Behavioral Consult,Olanzapine
+2,Behavioral Consult,Midazolam
+2,Midazolam,Lorazepam
+2,Lorazepam,EEG
+2,Lorazepam,Dexmedetomidine
+2,Haloperidol,Diagnosed
+2,Olanzapine,Diagnosed
+2,Midazolam,Diagnosed
+3,Pupillary Reaction,Suspicion
+3,Pupillary Reaction,Head CT
+3,Pupillary Reaction,Coma Score
+3,Coma Score,Suspicion
+3,Coma Score,Brain MRI
+3,Coma Score,Head CT
+3,ECMO Type,Suspicion
+3,ECMO Type,EEG
+3,Sodium,Head CT
+3,Hydromorphone,Dexmedetomidine
+3,Hydromorphone,Suspicion
+3,Morphine,Dexmedetomidine
+3,Morphine,Suspicion
+3,Fentanyl,Dexmedetomidine
+3,Fentanyl,Suspicion
+3,Behavioral Consult,Haloperidol
+3,Behavioral Consult,Olanzapine
+3,Behavioral Consult,Midazolam
+3,Midazolam,Lorazepam
+3,Lorazepam,EEG
+3,Lorazepam,Dexmedetomidine
+3,Dexmedetomidine,Diagnosed
+3,Haloperidol,Diagnosed
+3,Olanzapine,Diagnosed
+3,Midazolam,Diagnosed
+3,Cisatracurium,Fentanyl
+3,Cisatracurium,Hydromorphone
+3,Cisatracurium,Morphine
+3,Cisatracurium,Olanzapine
+3,Cisatracurium,EEG
+4,Behavioral Consult,Haloperidol
+4,Behavioral Consult,Olanzapine
+4,Behavioral Consult,Midazolam
+4,Behavioral Consult,Lorazepam
+4,Behavioral Consult,Dexmedetomidine
+4,Behavioral Consult,Diagnosed
+4,EEG,Diagnosed
+4,Brain MRI,Diagnosed
+4,Head CT,Diagnosed
+4,Haloperidol,Diagnosed
+4,Olanzapine,Diagnosed
+4,Midazolam,Diagnosed
+4,Lorazepam,Diagnosed
+4,Dexmedetomidine,Diagnosed
+4,Hydromorphone,Suspicion
+4,Morphine,Suspicion
+4,Fentanyl,Suspicion
+4,Ventilated,Suspicion
+4,Age,Suspicion
+4,Cisatracurium,Suspicion
+4,Suspicion,Behavioral Consult
+4,Suspicion,EEG
+4,Suspicion,Brain MRI
+4,Suspicion,Head CT
+4,ECMO Type,Suspicion
+4,Pupillary Reaction,Coma Score
+4,Pupillary Reaction,EEG
+4,Coma Score,EEG
+4,Coma Score,Brain MRI
+4,Coma Score,Head CT
+4,DBP,Suspicion
+4,SBP,Suspicion
+4,MBP,Suspicion
+4,pH,Suspicion
+4,Base Deficit,Suspicion
+4,Lactate,Suspicion
+4,Pulse,Suspicion
+4,Suspicion,Behavioral Consult
+4,Suspicion,EEG
+4,Suspicion,Head CT
+4,Suspicion,Brain MRI
+4,Pupillary Reaction,Suspicion
+4,Coma Score,Suspicion
+4,Midazolam,Suspicion
+4,Lorazepam,Suspicion
+4,Sodium,Suspicion
+4,Sodium,EEG
+4,Glucose,Suspicion

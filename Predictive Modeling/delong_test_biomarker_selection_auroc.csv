@@ -1,0 +1,11 @@
+Model 1,Model 2,Z-score,P-value,p_numeric
+Control,Correlation,-5.0469,4.491e-07,4.4914755447247015e-07
+Control,Clinician Consensus,-3.8218,1.325e-04,0.000132474
+Control,GOLEM,-3.1809,1.468e-03,0.001468225
+Control,PC-MB,-3.7981,1.458e-04,0.000145782
+Control,Clinician Consensus $\cup$ GOLEM,-3.5661,3.623e-04,0.000362273
+Control,Clinician Consensus $\cup$ PC-MB,-3.1917,1.415e-03,0.001414528
+Control,GOLEM $\cup$ PC-MB,-3.4346,5.934e-04,0.000593393
+Control,Clinician Consensus $\cap$ GOLEM,-5.5644,2.630e-08,2.6304001359614692e-08
+Control,Clinician Consensus $\cap$ PC-MB,-3.5869,3.346e-04,0.000334585
+Control,GOLEM $\cap$ PC-MB,-3.7163,2.022e-04,0.000202156

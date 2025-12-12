@@ -1,0 +1,199 @@
+﻿Clinician,From,To
+1,Neuromorbidity,Head CT
+1,Neuromorbidity,Brain MRI
+1,Neuromorbidity,EEG
+1,Neuromorbidity,Behavioral Consult
+1,ECMO,Head CT
+1,ECMO,EEG
+1,Peds Coma Score,Head CT
+1,Peds Coma Score,Brain MRI
+1,Peds Coma Score,EEG
+1,SBP,Head CT
+1,SBP,Brain MRI
+1,SBP,EEG
+1,MBP,Head CT
+1,MBP,Brain MRI
+1,MBP,Behavioral Consult
+1,Sodium,Head CT
+1,Sodium,EEG
+1,Hemoglobin,Head CT
+1,PTT,INR
+1,INR,Head CT
+1,Platelets,Head CT
+1,Pupillary Reaction,Head CT
+1,Pupillary Reaction,Brain MRI
+1,White Blood Cell Count,Brain MRI
+1,White Blood Cell Count,EEG
+1,Procalcitonin,Brain MRI
+1,Procalcitonin,EEG
+1,C-Reactive Protein,EEG
+1,C-Reactive Protein,Brain MRI
+1,Lactate,Brain MRI
+1,Lactate,EEG
+1,Temperature,Brain MRI
+1,Temperature,EEG
+1,Pulse,Head CT
+1,Pulse,Brain MRI
+1,Pulse,EEG
+1,Haloperidol,Behavioral Consult
+1,Olanzapine,Behavioral Consult
+1,Lorazepam,Behavioral Consult
+1,Lorazepam,EEG
+1,Midazolam,Behavioral Consult
+1,Midazolam,EEG
+1,Base Deficit,Neuromorbidity
+1,Potassium,Neuromorbidity
+1,Creatinine,Neuromorbidity
+1,pCO2,Neuromorbidity
+1,Blood Urea Nitrogen,Neuromorbidity
+1,pH,Neuromorbidity
+1,Base Excess,Neuromorbidity
+1,Chloride,Neuromorbidity
+1,Age,Neuromorbidity
+1,Bicarbonate,Neuromorbidity
+1,Glucose,Neuromorbidity
+1,CRRT Therapy Type,Neuromorbidity
+1,Weight,Neuromorbidity
+1,Ventilated,Neuromorbidity
+1,DBP,Neuromorbidity
+1,Respiratory Rate,Neuromorbidity
+1,SpO2,Neuromorbidity
+1,Milrinone,Neuromorbidity
+1,Cisatracurium,Neuromorbidity
+1,Dobutamine,Neuromorbidity
+1,Hydromorphone,Neuromorbidity
+1,Fentanyl,Neuromorbidity
+1,Morphine,Neuromorbidity
+1,Dopamine,Neuromorbidity
+1,Norepinephrine,Neuromorbidity
+1,Epinephrine,Neuromorbidity
+1,Dexmedetomidine,Neuromorbidity
+2,Peds Coma Score,Brain MRI
+2,Peds Coma Score,Head CT
+2,Respiratory Rate,Ventilated
+2,pCO2,Ventilated
+2,SpO2,Ventilated
+2,Endotracheal Tube,Ventilated
+2,Peds Coma Score,Endotracheal Tube
+2,Peds Coma Score,Neuromorbidity
+2,Peds Coma Score,Neuromorbidity
+2,ECMO,Neuromorbidity
+2,ECMO,Head CT
+2,ECMO,Brain MRI
+2,ECMO,EEG
+2,Respiratory Rate,ECMO
+2,pCO2,ECMO
+2,SpO2,ECMO
+2,Pulse,ECMO
+2,MBP,ECMO
+2,MBP,Epinephrine
+2,MBP,Norephinephrine
+2,MBP,Milrinone
+2,MBP,Dobutamine
+2,MBP,Dopamine
+2,Epinephrine,ECMO
+2,Norepinephrine,ECMO
+2,Milrinone,ECMO
+2,Dobutamine,ECMO
+2,Dopamine,ECMO
+2,Midazolam,Behavioral Consult
+2,Dexmedetomidine,Behavioral Consult
+2,Olanzapine,Behavioral Consult
+2,Haloperidol,Behavioral Consult
+2,Cisatracurium,Dexmedetomidine
+2,Morphine,Dexmedetomidine
+2,Midazolam,Dexmedetomidine
+2,Lorazepam,Dexmedetomidine
+2,Fentanyl,Dexmedetomidine
+2,Hydromorphone,Dexmedetomidine
+2,Neuromorbidity,EEG
+2,Neuromorbidity,Brain MRI
+2,Neuromorbidity,Head CT
+2,Neuromorbidity,Behavioral Consult
+2,Morphine,Neuromorbidity
+2,Midazolam,Neuromorbidity
+2,Lorazepam,Neuromorbidity
+2,Fentanyl,Neuromorbidity
+2,Hydromorphone,Neuromorbidity
+2,Sodium,Peds Coma Score
+2,Glucose,Peds Coma Score
+3,Midazolam,EEG
+3,Midazolam,Behavioral Consult
+3,Midazolam,Haloperidol
+3,Midazolam,Olanzapine
+3,Midazolam,Dexmedetomidine
+3,Age,Behavioral Consult
+3,Age,Haloperidol
+3,Age,Olanzapine
+3,Age,Dexmedetomidine
+3,Ventilated,Behavioral Consult
+3,Ventilated,Haloperidol
+3,Ventilated,Olanzapine
+3,Ventilated,Dexmedetomidine
+3,Haloperidol,Behavioral Consult
+3,Olanzapine,Behavioral Consult
+3,Dexmedetomidine,Behavioral Consult
+3,Lorazepam,EEG
+3,Lorazepam,Olanzapine
+3,Lorazepam,Dexmedetomidine
+3,ECMO,Pupillary Reaction
+3,Pupillary Reaction,Peds Coma Score
+3,Pupillary Reaction,EEG
+3,Pupillary Reaction,Brain MRI
+3,Pupillary Reaction,Head CT
+3,Peds Coma Score,EEG
+3,Peds Coma Score,Brain MRI
+3,Peds Coma Score,Head CT
+4,Neuromorbidity,EEG
+4,Neuromorbidity,Brain MRI
+4,Neuromorbidity,Head CT
+4,Neuromorbidity,Behavioral Consult
+4,Sodium,Head CT
+4,Sodium,Brain MRI
+4,Sodium,EEG
+4,Cisatracurium,EEG
+4,ECMO,EEG
+4,Peds Coma Score,Head CT
+4,Pupillary Reaction,Head CT
+4,pH,EEG
+4,pH,Brain MRI
+4,pH,Head CT
+4,pH,Behavioral Consult
+4,Head CT,Brain MRI
+4,Base Deficit,EEG
+4,Base Deficit,Brain MRI
+4,Base Deficit,Head CT
+4,Base Deficit,Behavioral Consult
+4,Base Excess,EEG
+4,Base Excess,Brain MRI
+4,Base Excess,Head CT
+4,Base Excess,Behavioral Consult
+4,Lactate,EEG
+4,Lactate,Brain MRI
+4,Lactate,Head CT
+4,Lactate,Behavioral Consult
+4,Bicarbonate,EEG
+4,Bicarbonate,Brain MRI
+4,Bicarbonate,Head CT
+4,Bicarbonate,Behavioral Consult
+4,Hydromorphone,Behavioral Consult
+4,Lorazepam,Behavioral Consult
+4,Midazolam,Behavioral Consult
+4,Morphine,Behavioral Consult
+4,Fentanyl,Behavioral Consult
+4,Pupillary Reaction,Peds Coma Score
+4,Hydromorphone,Haloperidol
+4,Lorazepam,Haloperidol
+4,Midazolam,Haloperidol
+4,Morphine,Haloperidol
+4,Fentanyl,Haloperidol
+4,Hydromorphone,Olanzapine
+4,Lorazepam,Olanzapine
+4,Midazolam,Olanzapine
+4,Morphine,Olanzapine
+4,Fentanyl,Olanzapine
+4,Hydromorphone,Dexmedetomidine
+4,Lorazepam,Dexmedetomidine
+4,Midazolam,Dexmedetomidine
+4,Morphine,Dexmedetomidine
+4,Fentanyl,Dexmedetomidine

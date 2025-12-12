@@ -1,0 +1,75 @@
+================================================================================
+BOSS-FCI (Wed, November 05, 2025 01:51:28 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 9
+
+Dataset
+--------------------------------------------------------------------------------
+file: tetrad_set_reduced_n2000.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: *
+comment marker: none
+
+Knowledge
+--------------------------------------------------------------------------------
+file: tetrad_bk_reduced.txt
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: BOSS-FCI
+test of independence: CG-LRT (Conditional Gaussian Likelihood Ratio Test)
+score: CG-BIC (Conditional Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.01
+bootstrappingNumThreads: 1
+completeRuleSetUsed: yes
+depth: -1
+discretize: no
+fractionResampleSize: 25
+guaranteePag: no
+maxDiscriminatingPathLength: -1
+minSampleSizePerCell: 4
+numberResampling: 10
+numCategoriesToDiscretize: 3
+numStarts: 1
+numThreads: 1
+penaltyDiscount: 2.0
+resamplingEnsemble: 2
+resamplingWithReplacement: yes
+saveBootstrapGraphs: no
+seed: 4242
+structurePrior: 0.0
+timeLag: 0
+useBes: no
+useMaxPHeuristic: yes
+verbose: no
+
+
+Wed, November 05, 2025 01:51:28 PM: Start data validation on file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 01:51:28 PM: End data validation on file tetrad_set_reduced_n2000.csv.
+There are 2000 cases and 53 variables.
+
+Wed, November 05, 2025 01:51:28 PM: Start reading in file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 01:51:28 PM: Finished reading in file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 01:51:28 PM: File tetrad_set_reduced_n2000.csv contains 2000 cases, 53 variables.
+Wed, November 05, 2025 01:51:28 PM: Start reading in file tetrad_bk_reduced.txt.
+Wed, November 05, 2025 01:51:28 PM: Finished reading in file tetrad_bk_reduced.txt.
+
+WARNING: Dataset contains missing values;testwise deletion will be used in test and/or score.
+
+Start search: Wed, November 05, 2025 01:51:28 PM
+End search: Wed, November 05, 2025 01:51:28 PM
+
+================================================================================
+Graph Nodes:
+
+
+Graph Edges:

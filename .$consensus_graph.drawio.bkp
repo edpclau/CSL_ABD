@@ -1,0 +1,402 @@
+<mxfile host="Electron" modified="2024-09-17T20:15:20.199Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="lGtmrGinURajEPB7rk9Q" version="21.4.0" type="device">
+  <diagram name="Page-1" id="UUqQG5sfcFRjQacQm6Dl">
+    <mxGraphModel dx="1026" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4200" pageHeight="6000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PChH79-0QM9xPbp4oQBr-1" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-222" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-2" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-2" value="Sodium" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-224" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-3" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-3" value="Cisatracurium" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-37" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-4" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-4" value="ECMO Type" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-221" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-5" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-5" value="Pupillary Reaction" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-217" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-6" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-6" value="Peds Coma Score" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-13" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-13" value="Lorazepam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-218" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-14" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-14" value="Midazolam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-226" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-15" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-15" value="Morphine" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-225" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-16" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-16" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-223" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-27" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-27" value="Age" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-53" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;Clinician Consensus&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1045" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-67" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-80" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-68" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-68" value="Base Excess" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-84" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-69" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-69" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-87" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-70" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-70" value="Hemoglobin" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-91" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-72" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-72" value="Lactate" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-73" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-73" value="Lorazepam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-88" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-74" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-74" value="Morphine" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-89" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-75" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-75" value="Midazolam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-76" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-76" value="Peds Coma Score" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-82" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-77" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-77" value="SpO2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-78" target="PChH79-0QM9xPbp4oQBr-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-78" value="Temperature" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-92" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;PC&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="460" y="620" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-93" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-94" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-95" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-95" value="Base Excess" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-96" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-97" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-97" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-98" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-99" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-99" value="Hemoglobin" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-100" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-101" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-101" value="Lactate" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-103" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-103" value="Lorazepam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-104" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-105" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-105" value="Morphine" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-106" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-107" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-107" value="Midazolam" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-108" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-109" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-109" value="Peds Coma Score" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-110" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-111" target="PChH79-0QM9xPbp4oQBr-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-111" value="SpO2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-118" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-120" target="PChH79-0QM9xPbp4oQBr-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-120" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="865" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-122" target="PChH79-0QM9xPbp4oQBr-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-122" value="Base Deficit" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-124" target="PChH79-0QM9xPbp4oQBr-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-124" value="Sodium" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-126" target="PChH79-0QM9xPbp4oQBr-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-126" value="Pupillary Reaction" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-127" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-128" target="PChH79-0QM9xPbp4oQBr-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-128" value="Bicarbonate" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="865" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-129" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;GRaSP-FCI&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1185" y="700" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-130" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;FCI&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="920" y="675" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-152" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1500" y="1155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-153" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-154" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-154" value="Base Excess" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="1045" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-155" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;strokeWidth=3;" parent="1" source="PChH79-0QM9xPbp4oQBr-156" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-156" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="1115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-157" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-158" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-158" value="Hemoglobin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="1185" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-159" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeWidth=1;" parent="1" source="PChH79-0QM9xPbp4oQBr-160" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-160" value="Lactate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="1255" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-162" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-162" value="Lorazepam" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1500" y="1255" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-163" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-164" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-164" value="Morphine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="1185" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-165" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-166" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-166" value="Midazolam" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="1255" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-167" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-168" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-168" value="Peds Coma Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="1115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-169" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-170" target="PChH79-0QM9xPbp4oQBr-152" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-170" value="SpO2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="1045" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-171" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Causal Search Consensus&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="1060" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-173" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Blue are biomarkers not included by clinicians&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="1060" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-174" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Green is biomarkers included by clinicians&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="1175" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-175" value="Neurologic Morbidity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="980" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-213" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-177" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-177" value="Base Excess" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-211" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-179" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-179" value="Fentanyl" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-210" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-181" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-181" value="Hemoglobin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-209" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-183" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-183" value="Lactate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="910" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-208" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-185" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-185" value="Lorazepam" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-206" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-187" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-187" value="Morphine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-207" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-189" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-189" value="Midazolam" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-191" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-191" value="Peds Coma Score" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-202" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-193" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-193" value="SpO2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-194" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Union DAG&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="970" y="970" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-203" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-195" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-195" value="Sodium" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-204" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-196" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-196" value="Pupillary Reaction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-201" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-197" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-197" value="Temperature" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="910" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-200" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-198" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-198" value="Base Deficit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-212" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-199" target="PChH79-0QM9xPbp4oQBr-175" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-199" value="Bicarbonate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-227" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="PChH79-0QM9xPbp4oQBr-12" target="PChH79-0QM9xPbp4oQBr-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PChH79-0QM9xPbp4oQBr-12" value="Hydromorphone" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Eddie Pérez <eddieperezclaudio@gmail.com>"]
+channels = ["conda-forge"]
+name = "Aim 1.1 Causal Discovery"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.0,<3.15"

@@ -1,0 +1,67 @@
+================================================================================
+BOSS-FCI (Wed, November 05, 2025 05:09:12 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 9
+
+Dataset
+--------------------------------------------------------------------------------
+file: tetrad_set_reduced_imputed.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: *
+comment marker: none
+
+Knowledge
+--------------------------------------------------------------------------------
+file: tetrad_bk_reduced.txt
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: BOSS-FCI
+test of independence: CG-LRT (Conditional Gaussian Likelihood Ratio Test)
+score: CG-BIC (Conditional Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.01
+bootstrappingNumThreads: 1
+completeRuleSetUsed: no
+depth: -1
+discretize: no
+fractionResampleSize: 50
+guaranteePag: no
+maxDiscriminatingPathLength: -1
+minSampleSizePerCell: 4
+numberResampling: 1
+numCategoriesToDiscretize: 3
+numStarts: 1
+numThreads: 5
+penaltyDiscount: 2.0
+resamplingEnsemble: 2
+resamplingWithReplacement: yes
+saveBootstrapGraphs: no
+seed: 4242
+structurePrior: 0.0
+timeLag: 0
+useBes: no
+useMaxPHeuristic: no
+verbose: yes
+
+
+Wed, November 05, 2025 05:09:12 PM: Start data validation on file tetrad_set_reduced_imputed.csv.
+Wed, November 05, 2025 05:09:12 PM: End data validation on file tetrad_set_reduced_imputed.csv.
+There are 3534 cases and 53 variables.
+
+Wed, November 05, 2025 05:09:12 PM: Start reading in file tetrad_set_reduced_imputed.csv.
+Wed, November 05, 2025 05:09:12 PM: Finished reading in file tetrad_set_reduced_imputed.csv.
+Wed, November 05, 2025 05:09:12 PM: File tetrad_set_reduced_imputed.csv contains 3534 cases, 53 variables.
+Wed, November 05, 2025 05:09:12 PM: Start reading in file tetrad_bk_reduced.txt.
+Wed, November 05, 2025 05:09:12 PM: Finished reading in file tetrad_bk_reduced.txt.
+
+Start search: Wed, November 05, 2025 05:09:12 PM
+--------------------------------------------------------------------------------

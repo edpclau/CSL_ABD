@@ -1,0 +1,96 @@
+================================================================================
+BOSS-FCI (Wed, November 05, 2025 02:01:04 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 9
+
+Dataset
+--------------------------------------------------------------------------------
+file: tetrad_set_reduced_n2000.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: *
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: BOSS-FCI
+test of independence: DG-LRT (Degenerate Gaussian Likelihood Ratio Test)
+score: DG-BIC (Degenerate Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: no
+alpha: 0.01
+bootstrappingNumThreads: 1
+completeRuleSetUsed: no
+depth: -1
+fractionResampleSize: 10
+guaranteePag: no
+maxDiscriminatingPathLength: -1
+numberResampling: 10
+numStarts: 1
+numThreads: 2
+penaltyDiscount: 2.0
+precomputeCovariances: no
+resamplingEnsemble: 2
+resamplingWithReplacement: yes
+saveBootstrapGraphs: no
+seed: 4242
+singularityLambda: 0.0
+structurePrior: 0.0
+timeLag: 0
+useBes: no
+useMaxPHeuristic: no
+verbose: no
+
+
+Wed, November 05, 2025 02:01:04 PM: Start data validation on file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 02:01:04 PM: End data validation on file tetrad_set_reduced_n2000.csv.
+There are 2000 cases and 53 variables.
+
+Wed, November 05, 2025 02:01:04 PM: Start reading in file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 02:01:04 PM: Finished reading in file tetrad_set_reduced_n2000.csv.
+Wed, November 05, 2025 02:01:04 PM: File tetrad_set_reduced_n2000.csv contains 2000 cases, 53 variables.
+
+WARNING: Dataset contains missing values;testwise deletion will be used in test and/or score.
+
+Start search: Wed, November 05, 2025 02:01:04 PM
+End search: Wed, November 05, 2025 02:01:33 PM
+
+================================================================================
+Graph Nodes:
+BH;Base deficit__MD_hrv_classic_pnn40;Base excess__SP_Summaries_welch_rect_centroid;Bicarbonate__SB_BinaryStats_diff_longstretch0;Blood urea nitrogen__SB_BinaryStats_diff_longstretch0;C-Reactive Protein__SB_BinaryStats_diff_longstretch0;CRRT Therapy Type__SP_Summaries_welch_rect_centroid;CT;Chloride__SB_BinaryStats_diff_longstretch0;Cisatracurium__SP_Summaries_welch_rect_centroid;Creatinine__SP_Summaries_welch_rect_centroid;DBP__SB_BinaryStats_diff_longstretch0;Dexmedetomidine;Dobutamine__FC_LocalSimple_mean1_tauresrat;Dopamine__SB_BinaryStats_diff_longstretch0;ECMO Type__SB_BinaryStats_diff_longstretch0;EEG;Endotracheal tube__SP_Summaries_welch_rect_centroid;Epinephrine__SB_BinaryStats_diff_longstretch0;Fentanyl__SP_Summaries_welch_rect_centroid;Glucose__SB_BinaryStats_diff_longstretch0;Haloperidol;Hemoglobin__SB_BinaryStats_diff_longstretch0;Hydromorphone__SP_Summaries_welch_rect_centroid;INR__SP_Summaries_welch_rect_centroid;Lactate__SP_Summaries_welch_rect_centroid;Lorazepam__SP_Summaries_welch_rect_centroid;MBP__SB_BinaryStats_diff_longstretch0;MRI;Meds;Midazolam__SB_BinaryStats_diff_longstretch0;Milrinone__SB_BinaryStats_diff_longstretch0;Morphine__SB_BinaryStats_diff_longstretch0;Norepinephrine__SB_BinaryStats_diff_longstretch0;Olanzapine;Outcome;PTT__SP_Summaries_welch_rect_centroid;Peds Coma Score__SB_BinaryStats_diff_longstretch0;Platelets__SB_BinaryStats_diff_longstretch0;Potassium__SP_Summaries_welch_rect_centroid;Procalcitonin__SB_BinaryStats_diff_longstretch0;Pulse__MD_hrv_classic_pnn40;Pupillary Reaction__CO_f1ecac;Respiratory Rate__SB_BinaryStats_diff_longstretch0;SBP__SB_BinaryStats_diff_longstretch0;Sodium__SB_BinaryStats_diff_longstretch0;SpO2__SB_BinaryStats_diff_longstretch0;Temperature__SB_BinaryStats_diff_longstretch0;Ventilated__PD_PeriodicityWang_th0_01;Weight__SP_Summaries_welch_rect_centroid;White blood cell count__SB_BinaryStats_diff_longstretch0;pCO2__SP_Summaries_welch_rect_centroid;pH__SP_Summaries_welch_rect_centroid
+
+Graph Edges:
+1. Fentanyl__SP_Summaries_welch_rect_centroid o-o Lorazepam__SP_Summaries_welch_rect_centroid [Fentanyl__SP_Summaries_welch_rect_centroid o-o Lorazepam__SP_Summaries_welch_rect_centroid]:1.0000;[edge]:1.0000
+2. Midazolam__SB_BinaryStats_diff_longstretch0 o-o Morphine__SB_BinaryStats_diff_longstretch0 [Midazolam__SB_BinaryStats_diff_longstretch0 o-o Morphine__SB_BinaryStats_diff_longstretch0]:1.0000;[edge]:1.0000
+3. Pulse__MD_hrv_classic_pnn40 o-o Base deficit__MD_hrv_classic_pnn40 [Pulse__MD_hrv_classic_pnn40 o-o Base deficit__MD_hrv_classic_pnn40]:1.0000;[edge]:1.0000
+4. EEG o-> CT [EEG o-> CT]:0.8000;[EEG <-- CT pd nl]:0.2000;[edge]:1.0000
+5. EEG o-> Outcome [EEG o-> Outcome]:0.8000;[EEG <-o Outcome]:0.2000;[edge]:1.0000
+6. Epinephrine__SB_BinaryStats_diff_longstretch0 o-o Midazolam__SB_BinaryStats_diff_longstretch0 [Epinephrine__SB_BinaryStats_diff_longstretch0 o-o Midazolam__SB_BinaryStats_diff_longstretch0]:0.8000;[no edge]:0.2000;[edge]:0.8000
+7. Lorazepam__SP_Summaries_welch_rect_centroid o-o INR__SP_Summaries_welch_rect_centroid [Lorazepam__SP_Summaries_welch_rect_centroid o-o INR__SP_Summaries_welch_rect_centroid]:0.8000;[Lorazepam__SP_Summaries_welch_rect_centroid o-> INR__SP_Summaries_welch_rect_centroid]:0.2000;[edge]:1.0000
+8. Midazolam__SB_BinaryStats_diff_longstretch0 o-o Norepinephrine__SB_BinaryStats_diff_longstretch0 [Midazolam__SB_BinaryStats_diff_longstretch0 o-o Norepinephrine__SB_BinaryStats_diff_longstretch0]:0.8000;[no edge]:0.2000;[edge]:0.8000
+9. Bicarbonate__SB_BinaryStats_diff_longstretch0 o-o Hemoglobin__SB_BinaryStats_diff_longstretch0 [Bicarbonate__SB_BinaryStats_diff_longstretch0 o-o Hemoglobin__SB_BinaryStats_diff_longstretch0]:0.6000;[Bicarbonate__SB_BinaryStats_diff_longstretch0 <-> Hemoglobin__SB_BinaryStats_diff_longstretch0]:0.2000;[Bicarbonate__SB_BinaryStats_diff_longstretch0 <-- Hemoglobin__SB_BinaryStats_diff_longstretch0 dd pl]:0.2000;[edge]:1.0000
+10. C-Reactive Protein__SB_BinaryStats_diff_longstretch0 o-o ECMO Type__SB_BinaryStats_diff_longstretch0 [C-Reactive Protein__SB_BinaryStats_diff_longstretch0 o-o ECMO Type__SB_BinaryStats_diff_longstretch0]:0.6000;[C-Reactive Protein__SB_BinaryStats_diff_longstretch0 <-o ECMO Type__SB_BinaryStats_diff_longstretch0]:0.2000;[no edge]:0.2000;[edge]:0.8000
+11. Lorazepam__SP_Summaries_welch_rect_centroid o-o Cisatracurium__SP_Summaries_welch_rect_centroid [Lorazepam__SP_Summaries_welch_rect_centroid o-o Cisatracurium__SP_Summaries_welch_rect_centroid]:0.6000;[Lorazepam__SP_Summaries_welch_rect_centroid o-> Cisatracurium__SP_Summaries_welch_rect_centroid]:0.2000;[no edge]:0.2000;[edge]:0.8000
+12. MBP__SB_BinaryStats_diff_longstretch0 o-o DBP__SB_BinaryStats_diff_longstretch0 [MBP__SB_BinaryStats_diff_longstretch0 o-o DBP__SB_BinaryStats_diff_longstretch0]:0.6000;[MBP__SB_BinaryStats_diff_longstretch0 <-o DBP__SB_BinaryStats_diff_longstretch0]:0.4000;[edge]:1.0000
+13. MRI o-> CT [MRI o-> CT]:0.6000;[MRI <-> CT]:0.2000;[MRI --> CT pd nl]:0.2000;[edge]:1.0000
+14. MRI o-> Outcome [MRI o-> Outcome]:0.6000;[MRI <-> Outcome]:0.2000;[MRI <-o Outcome]:0.2000;[edge]:1.0000
+15. Meds o-o Dexmedetomidine [Meds o-o Dexmedetomidine]:0.6000;[no edge]:0.4000;[edge]:0.6000
+16. Outcome o-> CT [Outcome o-> CT]:0.6000;[Outcome o-o CT]:0.2000;[Outcome --> CT dd pl]:0.2000;[edge]:1.0000
+17. Chloride__SB_BinaryStats_diff_longstretch0 --> Sodium__SB_BinaryStats_diff_longstretch0 [Chloride__SB_BinaryStats_diff_longstretch0 --> Sodium__SB_BinaryStats_diff_longstretch0 pd nl]:0.4000;[no edge]:0.4000;[Chloride__SB_BinaryStats_diff_longstretch0 o-o Sodium__SB_BinaryStats_diff_longstretch0]:0.2000;[edge]:0.6000 pd nl
+18. Base excess__SP_Summaries_welch_rect_centroid o-o CRRT Therapy Type__SP_Summaries_welch_rect_centroid [Base excess__SP_Summaries_welch_rect_centroid o-o CRRT Therapy Type__SP_Summaries_welch_rect_centroid]:0.4000;[Base excess__SP_Summaries_welch_rect_centroid o-> CRRT Therapy Type__SP_Summaries_welch_rect_centroid]:0.2000;[Base excess__SP_Summaries_welch_rect_centroid --> CRRT Therapy Type__SP_Summaries_welch_rect_centroid pd nl]:0.2000;[no edge]:0.2000;[edge]:0.8000
+19. CRRT Therapy Type__SP_Summaries_welch_rect_centroid o-o Fentanyl__SP_Summaries_welch_rect_centroid [CRRT Therapy Type__SP_Summaries_welch_rect_centroid o-o Fentanyl__SP_Summaries_welch_rect_centroid]:0.4000;[no edge]:0.4000;[CRRT Therapy Type__SP_Summaries_welch_rect_centroid <-o Fentanyl__SP_Summaries_welch_rect_centroid]:0.2000;[edge]:0.6000
+20. Chloride__SB_BinaryStats_diff_longstretch0 o-> White blood cell count__SB_BinaryStats_diff_longstretch0 [Chloride__SB_BinaryStats_diff_longstretch0 o-> White blood cell count__SB_BinaryStats_diff_longstretch0]:0.4000;[no edge]:0.4000;[Chloride__SB_BinaryStats_diff_longstretch0 <-o White blood cell count__SB_BinaryStats_diff_longstretch0]:0.2000;[edge]:0.6000
+21. Glucose__SB_BinaryStats_diff_longstretch0 o-o Blood urea nitrogen__SB_BinaryStats_diff_longstretch0 [Glucose__SB_BinaryStats_diff_longstretch0 o-o Blood urea nitrogen__SB_BinaryStats_diff_longstretch0]:0.4000;[Glucose__SB_BinaryStats_diff_longstretch0 o-> Blood urea nitrogen__SB_BinaryStats_diff_longstretch0]:0.2000;[Glucose__SB_BinaryStats_diff_longstretch0 <-o Blood urea nitrogen__SB_BinaryStats_diff_longstretch0]:0.2000;[no edge]:0.2000;[edge]:0.8000
+22. Hemoglobin__SB_BinaryStats_diff_longstretch0 o-o Chloride__SB_BinaryStats_diff_longstretch0 [Hemoglobin__SB_BinaryStats_diff_longstretch0 o-o Chloride__SB_BinaryStats_diff_longstretch0]:0.4000;[Hemoglobin__SB_BinaryStats_diff_longstretch0 o-> Chloride__SB_BinaryStats_diff_longstretch0]:0.2000;[Hemoglobin__SB_BinaryStats_diff_longstretch0 --> Chloride__SB_BinaryStats_diff_longstretch0 pd nl]:0.2000;[no edge]:0.2000;[edge]:0.8000
+23. Hemoglobin__SB_BinaryStats_diff_longstretch0 o-> White blood cell count__SB_BinaryStats_diff_longstretch0 [Hemoglobin__SB_BinaryStats_diff_longstretch0 o-> White blood cell count__SB_BinaryStats_diff_longstretch0]:0.4000;[Hemoglobin__SB_BinaryStats_diff_longstretch0 o-o White blood cell count__SB_BinaryStats_diff_longstretch0]:0.4000;[Hemoglobin__SB_BinaryStats_diff_longstretch0 <-> White blood cell count__SB_BinaryStats_diff_longstretch0]:0.2000;[edge]:1.0000
+24. INR__SP_Summaries_welch_rect_centroid o-> Base excess__SP_Summaries_welch_rect_centroid [INR__SP_Summaries_welch_rect_centroid o-> Base excess__SP_Summaries_welch_rect_centroid]:0.4000;[no edge]:0.4000;[INR__SP_Summaries_welch_rect_centroid <-o Base excess__SP_Summaries_welch_rect_centroid]:0.2000;[edge]:0.6000
+25. Lorazepam__SP_Summaries_welch_rect_centroid o-o Lactate__SP_Summaries_welch_rect_centroid [Lorazepam__SP_Summaries_welch_rect_centroid o-o Lactate__SP_Summaries_welch_rect_centroid]:0.4000;[Lorazepam__SP_Summaries_welch_rect_centroid o-> Lactate__SP_Summaries_welch_rect_centroid]:0.2000;[Lorazepam__SP_Summaries_welch_rect_centroid --> Lactate__SP_Summaries_welch_rect_centroid dd pl]:0.2000;[no edge]:0.2000;[edge]:0.8000
+26. PTT__SP_Summaries_welch_rect_centroid o-> Creatinine__SP_Summaries_welch_rect_centroid [PTT__SP_Summaries_welch_rect_centroid o-> Creatinine__SP_Summaries_welch_rect_centroid]:0.4000;[no edge]:0.4000;[PTT__SP_Summaries_welch_rect_centroid <-- Creatinine__SP_Summaries_welch_rect_centroid pd nl]:0.2000;[edge]:0.6000
+27. PTT__SP_Summaries_welch_rect_centroid o-o pCO2__SP_Summaries_welch_rect_centroid [PTT__SP_Summaries_welch_rect_centroid o-o pCO2__SP_Summaries_welch_rect_centroid]:0.4000;[no edge]:0.4000;[PTT__SP_Summaries_welch_rect_centroid <-o pCO2__SP_Summaries_welch_rect_centroid]:0.2000;[edge]:0.6000
+28. pCO2__SP_Summaries_welch_rect_centroid o-> Potassium__SP_Summaries_welch_rect_centroid [pCO2__SP_Summaries_welch_rect_centroid o-> Potassium__SP_Summaries_welch_rect_centroid]:0.4000;[no edge]:0.4000;[pCO2__SP_Summaries_welch_rect_centroid o-o Potassium__SP_Summaries_welch_rect_centroid]:0.2000;[edge]:0.6000

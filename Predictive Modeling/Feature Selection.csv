@@ -1,0 +1,39 @@
+Model,DAG,AUROC,AUPRC,BRIER,ECE,Bal_Accu,# Features,# Biomarkers
+LGBN,Control,0.90 ± 0.10,0.77 ± 0.18,0.05 ± 0.03,0.14 ± 0.03,0.77 ± 0.11,811,45
+XGB,Control,0.92 ± 0.09,0.80 ± 0.17,0.05 ± 0.03,0.09 ± 0.05,0.78 ± 0.11,811,45
+LGBN,Correlation,0.85 ± 0.11,0.72 ± 0.18,0.06 ± 0.03,0.12 ± 0.03,0.73 ± 0.11,113,37
+XGB,Correlation,0.87 ± 0.10,0.73 ± 0.19,0.06 ± 0.03,0.11 ± 0.04,0.76 ± 0.11,113,37
+LGBN,Clinician Consensus $\cup$ Golem,0.88 ± 0.11,0.76 ± 0.18,0.06 ± 0.03,0.12 ± 0.03,0.73 ± 0.11,212,21
+XGB,Clinician Consensus $\cup$ Golem,0.90 ± 0.09,0.78 ± 0.16,0.05 ± 0.03,0.10 ± 0.04,0.79 ± 0.11,212,21
+LGBN,Simplified Clinician Consensus $\cup$ Simplified PCMB,0.90 ± 0.09,0.76 ± 0.17,0.06 ± 0.02,0.13 ± 0.03,0.75 ± 0.11,315,18
+XGB,Simplified Clinician Consensus $\cup$ Simplified PCMB,0.89 ± 0.10,0.76 ± 0.18,0.05 ± 0.03,0.10 ± 0.04,0.79 ± 0.12,315,18
+LGBN,Simplified Clinician Consensus $\cup$ Simplified Golem,0.90 ± 0.10,0.76 ± 0.17,0.06 ± 0.02,0.13 ± 0.03,0.75 ± 0.11,389,22
+XGB,Simplified Clinician Consensus $\cup$ Simplified Golem,0.89 ± 0.10,0.78 ± 0.17,0.05 ± 0.03,0.10 ± 0.04,0.78 ± 0.11,389,22
+LGBN,Clinician Consensus $\cup$ PCMB,0.89 ± 0.11,0.75 ± 0.18,0.06 ± 0.03,0.12 ± 0.03,0.73 ± 0.11,209,17
+XGB,Clinician Consensus $\cup$ PCMB,0.88 ± 0.11,0.75 ± 0.19,0.05 ± 0.03,0.10 ± 0.04,0.76 ± 0.11,209,17
+LGBN,Simplified Golem $\cup$ Simplified PCMB,0.90 ± 0.09,0.76 ± 0.17,0.06 ± 0.02,0.13 ± 0.03,0.75 ± 0.11,407,23
+XGB,Simplified Golem $\cup$ Simplified PCMB,0.90 ± 0.10,0.77 ± 0.17,0.05 ± 0.03,0.10 ± 0.04,0.78 ± 0.11,407,23
+LGBN,Clinician Consensus,0.89 ± 0.11,0.76 ± 0.18,0.06 ± 0.03,0.12 ± 0.03,0.73 ± 0.11,203,14
+XGB,Clinician Consensus,0.88 ± 0.11,0.76 ± 0.18,0.05 ± 0.03,0.10 ± 0.04,0.78 ± 0.11,203,14
+LGBN,Simplified Clinician Consensus,0.89 ± 0.11,0.77 ± 0.18,0.06 ± 0.03,0.12 ± 0.03,0.73 ± 0.11,259,15
+XGB,Simplified Clinician Consensus,0.90 ± 0.09,0.77 ± 0.18,0.05 ± 0.03,0.10 ± 0.04,0.77 ± 0.11,259,15
+LGBN,Clinician Consensus $\cap$ PCMB,0.82 ± 0.12,0.66 ± 0.20,0.07 ± 0.03,0.12 ± 0.03,0.71 ± 0.11,20,11
+XGB,Clinician Consensus $\cap$ PCMB,0.83 ± 0.11,0.67 ± 0.19,0.06 ± 0.03,0.12 ± 0.04,0.73 ± 0.11,20,11
+LGBN,Golem,0.70 ± 0.14,0.37 ± 0.17,0.10 ± 0.04,0.14 ± 0.01,0.51 ± 0.03,16,10
+XGB,Golem,0.83 ± 0.11,0.61 ± 0.20,0.08 ± 0.04,0.12 ± 0.03,0.69 ± 0.11,16,10
+LGBN,PCMB,0.85 ± 0.11,0.68 ± 0.19,0.06 ± 0.03,0.12 ± 0.03,0.71 ± 0.11,26,14
+XGB,PCMB,0.85 ± 0.13,0.70 ± 0.20,0.06 ± 0.03,0.12 ± 0.04,0.75 ± 0.11,26,14
+LGBN,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.89 ± 0.11,0.76 ± 0.18,0.06 ± 0.02,0.12 ± 0.03,0.73 ± 0.11,240,14
+XGB,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.90 ± 0.10,0.78 ± 0.18,0.05 ± 0.03,0.10 ± 0.04,0.77 ± 0.11,240,14
+LGBN,Simplified PCMB,0.90 ± 0.09,0.76 ± 0.17,0.06 ± 0.02,0.13 ± 0.03,0.75 ± 0.11,296,17
+XGB,Simplified PCMB,0.88 ± 0.11,0.76 ± 0.19,0.05 ± 0.03,0.10 ± 0.04,0.76 ± 0.12,296,17
+LGBN,Clinician Consensus $\cap$ Golem,0.63 ± 0.14,0.31 ± 0.16,0.11 ± 0.04,0.13 ± 0.01,0.51 ± 0.03,7,3
+XGB,Clinician Consensus $\cap$ Golem,0.66 ± 0.15,0.35 ± 0.19,0.10 ± 0.04,0.12 ± 0.02,0.55 ± 0.07,7,3
+LGBN,Simplified Golem,0.88 ± 0.10,0.73 ± 0.19,0.06 ± 0.03,0.13 ± 0.03,0.73 ± 0.10,199,11
+XGB,Simplified Golem,0.90 ± 0.10,0.78 ± 0.19,0.05 ± 0.03,0.10 ± 0.04,0.78 ± 0.12,199,11
+LGBN,Golem $\cup$ PCMB,0.85 ± 0.11,0.70 ± 0.20,0.06 ± 0.03,0.12 ± 0.03,0.72 ± 0.12,42,20
+XGB,Golem $\cup$ PCMB,0.89 ± 0.10,0.74 ± 0.19,0.05 ± 0.03,0.11 ± 0.04,0.77 ± 0.11,42,20
+LGBN,Simplified Golem $\cap$ Simplified PCMB,0.87 ± 0.11,0.71 ± 0.19,0.06 ± 0.03,0.13 ± 0.03,0.71 ± 0.11,88,5
+XGB,Simplified Golem $\cap$ Simplified PCMB,0.88 ± 0.11,0.73 ± 0.19,0.05 ± 0.03,0.11 ± 0.04,0.77 ± 0.12,88,5
+LGBN,Simplified Clinician Consensus $\cap$ Simplified Golem,0.87 ± 0.11,0.71 ± 0.19,0.06 ± 0.03,0.12 ± 0.03,0.71 ± 0.11,69,4
+XGB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.87 ± 0.10,0.73 ± 0.18,0.06 ± 0.03,0.11 ± 0.04,0.76 ± 0.11,69,4

@@ -1,0 +1,17 @@
+Graph Nodes:
+BH;CT;Dexmedetomidine;Dobutamine__FC_LocalSimple_mean1_tauresrat;EEG;Fentanyl__SP_Summaries_welch_rect_centroid;MRI;Meds;Norepinephrine__SB_BinaryStats_diff_longstretch0;Outcome;Peds Coma Score__SB_BinaryStats_diff_longstretch0;Pulse__MD_hrv_classic_pnn40;Pupillary Reaction__CO_f1ecac;Sodium__SB_BinaryStats_diff_longstretch0;Temperature__SB_BinaryStats_diff_longstretch0;Weight__SP_Summaries_welch_rect_centroid
+
+Graph Edges:
+1. CT --> Outcome [CT --> Outcome dd nl]:1.0000;[edge]:1.0000 dd nl
+2. EEG --> MRI [EEG --> MRI dd nl]:1.0000;[edge]:1.0000 dd nl
+3. EEG --> Outcome [EEG --> Outcome dd nl]:1.0000;[edge]:1.0000 dd nl
+4. CT --> MRI [CT --> MRI pd nl]:1.0000;[edge]:1.0000 pd nl
+5. MRI --> Outcome [MRI --> Outcome pd nl]:1.0000;[edge]:1.0000 pd nl
+6. Pulse__MD_hrv_classic_pnn40 --> BH [Pulse__MD_hrv_classic_pnn40 --> BH pd pl]:1.0000;[edge]:1.0000 pd pl
+7. Sodium__SB_BinaryStats_diff_longstretch0 --> CT [Sodium__SB_BinaryStats_diff_longstretch0 --> CT pd pl]:1.0000;[edge]:1.0000 pd pl
+8. Dexmedetomidine --- Meds [Dexmedetomidine --- Meds]:1.0000;[edge]:1.0000
+9. Weight__SP_Summaries_welch_rect_centroid --> MRI [Weight__SP_Summaries_welch_rect_centroid --> MRI pd pl]:0.8000;[no edge]:0.2000;[edge]:0.8000 pd pl
+10. EEG --> CT [EEG --> CT]:0.8000;[EEG <-- CT]:0.2000;[edge]:1.0000
+11. Peds Coma Score__SB_BinaryStats_diff_longstretch0 --> BH [Peds Coma Score__SB_BinaryStats_diff_longstretch0 --> BH pd pl]:0.6000;[no edge]:0.4000;[edge]:0.6000 pd pl
+12. Peds Coma Score__SB_BinaryStats_diff_longstretch0 --> CT [Peds Coma Score__SB_BinaryStats_diff_longstretch0 --> CT pd pl]:0.6000;[no edge]:0.4000;[edge]:0.6000 pd pl
+

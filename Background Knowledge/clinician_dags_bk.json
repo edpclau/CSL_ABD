@@ -1,0 +1,113 @@
+{
+    "pH": [
+        "EEG",
+        "MRI",
+        "CT",
+        "Meds",
+        "BH"
+    ],
+    "Base Deficit": [
+        "EEG",
+        "MRI",
+        "CT",
+        "Meds",
+        "BH"
+    ],
+    "Ventilated": [
+        "EEG",
+        "MRI",
+        "CT",
+        "Meds",
+        "BH"
+    ],
+    "Pulse": [
+        "EEG",
+        "MRI",
+        "CT",
+        "Meds",
+        "BH"
+    ],
+    "DBP": [
+        "EEG",
+        "MRI",
+        "CT",
+        "Meds",
+        "BH"
+    ],
+    "Hydromorphone": [
+        "BH",
+        "EEG",
+        "MRI",
+        "CT",
+        "Dexmedetomidine"
+    ],
+    "Lorazepam": [
+        "EEG",
+        "Dexmedetomidine"
+    ],
+    "Midazolam": [
+        "BH",
+        "Lorazepam",
+        "Dexmedetomidine"
+    ],
+    "Morphine": [
+        "BH",
+        "EEG",
+        "MRI",
+        "CT",
+        "Dexmedetomidine"
+    ],
+    "Fentanyl": [
+        "BH",
+        "EEG",
+        "MRI",
+        "CT",
+        "Dexmedetomidine"
+    ],
+    "Haloperidol": [
+        "Meds",
+        "BH"
+    ],
+    "Olanzapine": [
+        "Meds",
+        "BH"
+    ],
+    "Dexmedetomidine": [
+        "Meds"
+    ],
+    "Cisatracurium": [
+        "EEG"
+    ],
+    "ECMO Type": [
+        "EEG"
+    ],
+    "Pupillary Reaction": [
+        "CT"
+    ],
+    "Peds Coma Score": [
+        "CT"
+    ],
+    "Sodium": [
+        "EEG",
+        "CT"
+    ],
+    "Lactate": [
+        "MRI",
+        "EEG"
+    ],
+    "EEG": [
+        "Outcome"
+    ],
+    "CT": [
+        "Outcome"
+    ],
+    "MRI": [
+        "Outcome"
+    ],
+    "BH": [
+        "Outcome"
+    ],
+    "Meds": [
+        "Outcome"
+    ]
+}

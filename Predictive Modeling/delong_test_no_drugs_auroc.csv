@@ -1,0 +1,56 @@
+Model 1,Model 2,Z-score,P-value,p_numeric
+Control,Correlation,-4.7039,2.553e-06,2.5529238223892256e-06
+Control,Clinician Consensus $\cup$ PC-MB,-2.8541,4.317e-03,0.00431651
+Control,Clinician Consensus $\cup$ GOLEM,-2.722,6.488e-03,0.006488346
+Control,GOLEM $\cup$ PC-MB,-2.6067,9.141e-03,0.009140829
+Control,Clinician Consensus,-3.912,9.154e-05,9.154114782232899e-05
+Control,Clinician Consensus $\cap$ PC-MB,-3.0183,2.542e-03,0.002541754
+Control,PC-MB,-2.2769,2.279e-02,0.022794166014710716
+Control,GOLEM,-1.0311,3.025e-01,0.3024715777428243
+Control,GOLEM $\cap$ PC-MB,-2.8589,4.251e-03,0.004251352
+Control,Clinician Consensus $\cap$ GOLEM,-4.6041,4.142e-06,4.142254153040236e-06
+Correlation,Clinician Consensus $\cup$ PC-MB,2.4157,1.570e-02,0.015704243
+Correlation,Clinician Consensus $\cup$ GOLEM,2.4398,1.470e-02,0.014695831597576555
+Correlation,GOLEM $\cup$ PC-MB,2.6045,9.200e-03,0.009199542
+Correlation,Clinician Consensus,1.0987,2.719e-01,0.27191027795048195
+Correlation,Clinician Consensus $\cap$ PC-MB,2.0106,4.437e-02,0.044367653
+Correlation,PC-MB,3.0047,2.658e-03,0.00265805
+Correlation,GOLEM,3.6615,2.507e-04,0.000250695
+Correlation,GOLEM $\cap$ PC-MB,1.8874,5.910e-02,0.059101852225722146
+Correlation,Clinician Consensus $\cap$ GOLEM,-0.2468,8.051e-01,0.8050599925240629
+Clinician Consensus $\cup$ PC-MB,Clinician Consensus $\cup$ GOLEM,0.1451,8.846e-01,0.8846181338076039
+Clinician Consensus $\cup$ PC-MB,GOLEM $\cup$ PC-MB,0.5303,5.959e-01,0.5959099042826095
+Clinician Consensus $\cup$ PC-MB,Clinician Consensus,-1.7877,7.383e-02,0.07383047
+Clinician Consensus $\cup$ PC-MB,Clinician Consensus $\cap$ PC-MB,-0.5269,5.983e-01,0.5982914670540613
+Clinician Consensus $\cup$ PC-MB,PC-MB,0.7473,4.549e-01,0.4549093436411389
+Clinician Consensus $\cup$ PC-MB,GOLEM,1.6115,1.071e-01,0.10707651235803557
+Clinician Consensus $\cup$ PC-MB,GOLEM $\cap$ PC-MB,-0.4918,6.229e-01,0.6228514570293295
+Clinician Consensus $\cup$ PC-MB,Clinician Consensus $\cap$ GOLEM,-2.7247,6.437e-03,0.006436551
+Clinician Consensus $\cup$ GOLEM,GOLEM $\cup$ PC-MB,0.3154,7.525e-01,0.7524515813105241
+Clinician Consensus $\cup$ GOLEM,Clinician Consensus,-1.8398,6.579e-02,0.065793771
+Clinician Consensus $\cup$ GOLEM,Clinician Consensus $\cap$ PC-MB,-0.635,5.254e-01,0.5254319802460667
+Clinician Consensus $\cup$ GOLEM,PC-MB,0.4426,6.580e-01,0.6580351619330111
+Clinician Consensus $\cup$ GOLEM,GOLEM,1.6377,1.015e-01,0.10149456411022868
+Clinician Consensus $\cup$ GOLEM,GOLEM $\cap$ PC-MB,-0.6089,5.426e-01,0.5425893602899795
+Clinician Consensus $\cup$ GOLEM,Clinician Consensus $\cap$ GOLEM,-2.8052,5.029e-03,0.005029068
+GOLEM $\cup$ PC-MB,Clinician Consensus,-2.0894,3.667e-02,0.036667603
+GOLEM $\cup$ PC-MB,Clinician Consensus $\cap$ PC-MB,-0.9155,3.599e-01,0.35990755600081226
+GOLEM $\cup$ PC-MB,PC-MB,0.2083,8.350e-01,0.8349713944990321
+GOLEM $\cup$ PC-MB,GOLEM,1.3098,1.903e-01,0.19026204128013757
+GOLEM $\cup$ PC-MB,GOLEM $\cap$ PC-MB,-0.8811,3.783e-01,0.3782576875177738
+GOLEM $\cup$ PC-MB,Clinician Consensus $\cap$ GOLEM,-2.9735,2.944e-03,0.002943954
+Clinician Consensus,Clinician Consensus $\cap$ PC-MB,1.4784,1.393e-01,0.13929440760457615
+Clinician Consensus,PC-MB,2.3946,1.664e-02,0.016639062201264064
+Clinician Consensus,GOLEM,3.1797,1.474e-03,0.001474168
+Clinician Consensus,GOLEM $\cap$ PC-MB,0.9412,3.466e-01,0.346602193
+Clinician Consensus,Clinician Consensus $\cap$ GOLEM,-1.5274,1.267e-01,0.12667021613225002
+Clinician Consensus $\cap$ PC-MB,PC-MB,1.2307,2.184e-01,0.21843003198082533
+Clinician Consensus $\cap$ PC-MB,GOLEM,2.0162,4.378e-02,0.043775634
+Clinician Consensus $\cap$ PC-MB,GOLEM $\cap$ PC-MB,-0.0708,9.435e-01,0.9435292662084309
+Clinician Consensus $\cap$ PC-MB,Clinician Consensus $\cap$ GOLEM,-2.5623,1.040e-02,0.010398084332065087
+PC-MB,GOLEM,1.1309,2.581e-01,0.2581163649290922
+PC-MB,GOLEM $\cap$ PC-MB,-1.0722,2.836e-01,0.28363646323914626
+PC-MB,Clinician Consensus $\cap$ GOLEM,-3.2566,1.128e-03,0.001127601
+GOLEM,GOLEM $\cap$ PC-MB,-2.2887,2.210e-02,0.02209763
+GOLEM,Clinician Consensus $\cap$ GOLEM,-4.201,2.658e-05,2.6575529111622028e-05
+GOLEM $\cap$ PC-MB,Clinician Consensus $\cap$ GOLEM,-2.651,8.024e-03,0.00802431

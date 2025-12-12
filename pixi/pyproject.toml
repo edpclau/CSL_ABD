@@ -1,0 +1,32 @@
+[project]
+authors = [{name = "Eddie Pérez", email = "eddieperezclaudio@gmail.com"}]
+dependencies = ["opt-einsum", "pycalib>=0.1.0.dev6,<0.2", "mlstatkit>=0.1.91,<0.2", "shap==0.50.0", "matplotlib-venn[shapely]>=1.1.2,<2"]
+name = "pixi"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+pixi = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+python = ">=3.12.12,<3.13"
+xgboost = ">=3.1.1,<4"
+networkx = ">=3.5,<4"
+pandas = ">=2.3.3,<3"
+pgmpy = ">=1.0.0,<2"
+scikit-learn = ">=1.7.2,<2"
+pyro-ppl = ">=1.9.1,<2"
+jupyter = ">=1.1.1,<2"
+seaborn = ">=0.13.2,<0.14"
+pygraphviz = ">=1.14,<2"
+pydot = ">=4.0.1,<5"

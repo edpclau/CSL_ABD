@@ -1,0 +1,11 @@
+Model 1,Model 2,Avg Precision Model 1,Avg Precision Model 2,P-value,Benchmark,Samples Mean,Samples Std
+Control,Correlation,0.8082,0.7467,0.000e+00,0.06146615117314458,0.0091,0.0067
+Control,Simplified Clinician Consensus $\cup$ Simplified PCMB,0.8082,0.7859,1.600e-02,0.02235413206636261,0.0075,0.0056
+Control,Simplified Clinician Consensus $\cup$ Simplified Golem,0.8082,0.7805,1.000e-03,0.027696349159038958,0.0070,0.0054
+Control,Simplified Golem $\cup$ Simplified PCMB,0.8082,0.7800,2.000e-03,0.028178746210574035,0.0070,0.0053
+Control,Simplified Clinician Consensus,0.8082,0.7742,0.000e+00,0.03404223676287177,0.0078,0.0059
+Control,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.8082,0.7857,2.100e-02,0.022462336985652143,0.0078,0.0059
+Control,Simplified PCMB,0.8082,0.7809,8.000e-03,0.02733717096977939,0.0074,0.0059
+Control,Simplified Golem,0.8082,0.7707,0.000e+00,0.03754732333448885,0.0078,0.0058
+Control,Simplified Golem $\cap$ Simplified PCMB,0.8082,0.7632,0.000e+00,0.04499911553501745,0.0085,0.0064
+Control,Simplified Clinician Consensus $\cap$ Simplified Golem,0.8082,0.7363,0.000e+00,0.07187802174061686,0.0094,0.0068
