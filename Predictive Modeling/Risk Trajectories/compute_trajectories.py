@@ -19,16 +19,19 @@ def _chunks(seq, size):
         yield seq[i:i + size]
 
 
-def run(uids=None, chunk_size=50, out_dir=None, log_every=1):
+def run(uids=None, chunk_size=50, out_dir=None, log_every=1, raw=None,
+        risk_filename="risk_trajectories.parquet"):
     log_every = max(1, log_every)
     out_dir = OUT_DIR if out_dir is None else out_dir
     shap_dir = out_dir / "shap"
-    risk_parquet = out_dir / "risk_trajectories.parquet"
+    risk_parquet = out_dir / risk_filename
     shap_dir.mkdir(parents=True, exist_ok=True)
     (shap_dir / "feature_names.json").write_text(json.dumps(FEATURE_LIST_811))
 
     all_uids = data_io.test_uids() if uids is None else list(map(str, uids))
-    raw = data_io.build_test_raw(all_uids)
+    # `raw` (pre-built compact test table) lets parallel workers share one build
+    # and avoid concurrently re-streaming/overwriting test_raw.parquet.
+    raw = data_io.build_test_raw(all_uids) if raw is None else raw
     ytrue = pd.read_csv(OUTCOME_COMPONENTS_TEST, index_col=0)["Outcome"].astype(int)
     ytrue.index = ytrue.index.map(str)
 
