@@ -3,7 +3,6 @@ from dataclasses import dataclass
 import pandas as pd
 from config import WINDOW_H, CENSOR_H, STRIDE_H
 
-_H = pd.Timedelta(hours=1)
 _SAFETY_MAX_K = 5000   # backstop; no real PICU stay approaches this
 
 
