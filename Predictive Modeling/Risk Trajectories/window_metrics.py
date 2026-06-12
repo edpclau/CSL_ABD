@@ -1,4 +1,5 @@
 # window_metrics.py — discrimination as a function of lead time + headline averages.
+import json
 import numpy as np
 import pandas as pd
 from sklearn.metrics import average_precision_score, roc_auc_score
@@ -31,6 +32,8 @@ def run(risk_parquet=None, out_csv=None):
     per_k, overall = compute(risk)
     out_csv = WINDOW_METRICS if out_csv is None else out_csv
     per_k.to_csv(out_csv, index=False)
+    # persist the headline averages (overall AUPRC over all windows) next to the per-k CSV
+    (out_csv.parent / "window_metrics_summary.json").write_text(json.dumps(overall, indent=2))
     print("Headline:", {k: round(v, 4) if isinstance(v, float) else v for k, v in overall.items()})
     print(f"k=0 AUPRC={per_k.loc[per_k.k==0,'AUPRC'].iloc[0]:.4f} "
           f"AUROC={per_k.loc[per_k.k==0,'AUROC'].iloc[0]:.4f} (expect ~0.7913 / 0.9229)")

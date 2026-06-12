@@ -7,7 +7,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from window_metrics import compute
-from config import FIG_DIR, COMPONENTS
+from config import FIG_DIR, COMPONENTS, RISK_PARQUET, SHAP_DIR
 
 
 def _ensure(fig_dir):
@@ -88,3 +88,11 @@ def fig_examples(risk, shap_dir, fig_dir=FIG_DIR, n_per_class=1, top_k=6):
             a2.legend(fontsize=7, ncol=2)
             a1.invert_xaxis()                                     # admission -> anchor left-to-right
             fig.tight_layout(); fig.savefig(fig_dir / f"example_{cls}_{uid}.pdf"); plt.close(fig)
+
+
+if __name__ == "__main__":
+    risk = pd.read_parquet(RISK_PARQUET)
+    fig_aggregate_risk(risk, FIG_DIR)
+    fig_window_metrics(risk, FIG_DIR)
+    fig_examples(risk, SHAP_DIR, FIG_DIR, n_per_class=2)
+    print(f"figures written to {FIG_DIR}")

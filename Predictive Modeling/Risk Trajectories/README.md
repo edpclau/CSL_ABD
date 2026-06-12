@@ -73,15 +73,19 @@ This is checked by `validate_k0.py` (a sample) and by the k=0 row of
   have an outcome early enough that only the k=0 window fits. The AUPRC drop from
   k=0→k=1 partly reflects losing these cases plus the 12 h censor offset.
 
-## Artifacts (`artifacts/`, git-ignored — large)
+## Artifacts (`artifacts/`)
+
+The large arrays (`shap/`, `*.parquet`, `*.log`) are git-ignored; the two small
+metrics files are committed.
 
 | file | contents |
 |---|---|
-| `risk_trajectories.parquet` | one row per (uid, k): `k` (hours before anchor), `n_observed`, `EEG_p`, `CT_p`, `MRI_p`, `ensemble_risk`, `y_true`. 423,183 rows, 5.5 MB. |
-| `shap/<uid>.npz` | per-patient SHAP, full: `eeg`/`ct`/`mri` each `(n_windows, 812)` (811 features + bias), `meta` `(n_windows, 4)` (3 components + bias), `k` `(n_windows,)`. 3,895 files, ~990 MB. |
+| `risk_trajectories.parquet` | one row per (uid, k): `k` (hours before anchor), `n_observed`, `EEG_p`, `CT_p`, `MRI_p`, `ensemble_risk`, `y_true`. 423,183 rows, 5.5 MB. *(git-ignored)* |
+| `shap/<uid>.npz` | per-patient SHAP, full: `eeg`/`ct`/`mri` each `(n_windows, 812)` (811 features + bias), `meta` `(n_windows, 4)` (3 components + bias), `k` `(n_windows,)`. 3,895 files, ~990 MB. *(git-ignored)* |
 | `shap/feature_names.json` | the 811 feature names (column order of the SHAP arrays). |
-| `window_metrics.csv` | per offset `k`: `n_patients`, `n_pos`, `AUPRC`, `AUROC`. |
-| `test_raw.parquet` | compact long table of the 3,895 test patients' raw biomarkers (build cache). |
+| `window_metrics.csv` | per offset `k`: `n_patients`, `n_pos`, `AUPRC`, `AUROC`. *(committed)* |
+| `window_metrics_summary.json` | the headline averages: `auprc_pooled`/`auroc_pooled`, `auprc_macro`/`auroc_macro`, `n_window_rows`. *(committed)* |
+| `test_raw.parquet` | compact long table of the test patients' raw biomarkers (build cache, rebuilt each run). *(git-ignored)* |
 
 Loading one patient (memory-safe — never load the whole SHAP set at once):
 
@@ -112,11 +116,8 @@ $PY run_full.py --nshards 6
 $PY run_full.py --resume --nshards 8
 
 # metrics + figures
-$PY window_metrics.py
-$PY -c "import pandas as pd, make_figures as MF; from pathlib import Path; \
-        r=pd.read_parquet('artifacts/risk_trajectories.parquet'); d=Path('figures'); \
-        MF.fig_aggregate_risk(r,d); MF.fig_window_metrics(r,d); \
-        MF.fig_examples(r, Path('artifacts/shap'), d, n_per_class=2)"
+$PY window_metrics.py     # writes window_metrics.csv + window_metrics_summary.json
+$PY make_figures.py       # writes figures/*.pdf
 
 # tests (includes the k=0 gate)
 $PY -m pytest tests/ -v
