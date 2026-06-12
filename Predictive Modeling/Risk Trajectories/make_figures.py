@@ -70,7 +70,7 @@ def fig_examples(risk, shap_dir, fig_dir=FIG_DIR, n_per_class=1, top_k=6):
             order = np.argsort(z["k"])
             ks = z["k"][order]
             # choose the head whose component prob is largest at k=0 for this patient
-            comp_at0 = rg.iloc[(rg["k"] == 0).argmax()][["EEG_p", "CT_p", "MRI_p"]].to_numpy()
+            comp_at0 = rg[rg["k"] == 0].iloc[0][["EEG_p", "CT_p", "MRI_p"]].to_numpy()
             head = COMPONENTS[int(np.argmax(comp_at0))]
             S = z[head_key[head]][order][:, :811]                 # drop bias col
             top = np.argsort(np.abs(S).max(axis=0))[::-1][:top_k]
