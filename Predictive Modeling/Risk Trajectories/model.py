@@ -6,10 +6,10 @@ import xgboost as xgb
 from config import ENS_TUNED, COMPONENTS
 
 
-@dataclass
+@dataclass(frozen=True)
 class Bundle:
     heads: dict          # component -> XGBClassifier
-    meta: object         # XGBClassifier
+    meta: xgb.XGBClassifier
     feat_names: list     # 811 head feature names (from booster)
 
 
@@ -22,6 +22,8 @@ def load_models() -> Bundle:
     meta = xgb.XGBClassifier()
     meta.load_model(str(ENS_TUNED / "meta_xgb_tuned.json"))
     feat_names = heads[COMPONENTS[0]].get_booster().feature_names
+    assert all(heads[c].get_booster().feature_names == feat_names for c in COMPONENTS), \
+        "head feature names diverge across components"
     return Bundle(heads=heads, meta=meta, feat_names=feat_names)
 
 
