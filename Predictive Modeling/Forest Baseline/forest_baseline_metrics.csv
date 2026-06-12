@@ -1,6 +1,0 @@
-Model,AUROC,AUPRC,Brier,BalAcc,F1
-RF Regressor on 0/1  (RegressionForest analog) [MICE],0.9256,0.7976,0.0456,0.7832,0.711
-RF Classifier (balanced) [MICE],0.929,0.8022,0.0507,0.8056,0.7345
-XGBoost [MICE]  (controlled comparator),0.9191,0.7961,0.0423,0.8109,0.7401
-Control XGBoost [raw NaN]  (reference),0.9304,0.8082,0.0418,0.8018,0.7336
-Tuned ensemble  (reference),0.9229,0.7913,0.0433,0.8093,0.7354

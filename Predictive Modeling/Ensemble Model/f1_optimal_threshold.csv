@@ -1,5 +1,0 @@
-Model,F1@0.5,F1@test-opt,thr_test,F1@train-thr,thr_train
-Ensemble -- LogReg meta,0.5935,0.7096,0.1545,0.697,0.1238
-Ensemble -- Noisy-OR,0.4821,0.7093,0.0903,0.6954,0.0641
-Ensemble -- XGB meta,0.7117,0.7126,0.5284,0.6847,0.3489
-Control (all biomarkers),0.7336,0.7529,0.3048,0.6912,0.78
