@@ -1,0 +1,26 @@
+[workspace]
+name = "causal-effect-estimation"
+version = "0.1.0"
+description = "BRAIN-AI Aim 1: EconML CausalForest + SHAP environment for causal effect estimation"
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+# econml 0.16 pins scikit-learn <1.7 and pulls shap (<0.49) -- kept isolated from the
+# causal_inf env (sklearn 1.7.2). The solver co-resolves a compatible numerics stack.
+[dependencies]
+python = "3.11.*"
+econml = ">=0.16"
+shap = "*"
+scikit-learn = "*"
+numpy = "*"
+scipy = "*"
+pandas = "*"
+pyarrow = "*"            # to read the real_cohort parquet tables later
+matplotlib = "*"
+xgboost = ">=3"          # nuisance models for DML, consistent with the rest of the project
+jupyterlab = "*"
+ipykernel = "*"
+
+[tasks]
+smoke = "python smoke_test.py"
+lab = "jupyter lab"

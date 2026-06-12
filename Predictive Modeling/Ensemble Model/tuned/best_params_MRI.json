@@ -1,0 +1,15 @@
+{
+  "component": "MRI",
+  "cv_auprc": 0.2833,
+  "n_estimators": 12,
+  "scale_pos_weight_max": 24.35,
+  "max_depth": 9,
+  "learning_rate": 0.10995,
+  "subsample": 0.66939,
+  "colsample_bytree": 0.80567,
+  "min_child_weight": 8,
+  "gamma": 3.53611,
+  "reg_alpha": 0.14802,
+  "reg_lambda": 0.56724,
+  "scale_pos_weight": 1.41159
+}

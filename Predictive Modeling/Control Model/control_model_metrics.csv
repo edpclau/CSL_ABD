@@ -1,0 +1,9 @@
+Metric,Value
+AUROC,0.9304
+Average Precision (AUPRC),0.8082
+Brier Score,0.0418
+Balanced Accuracy,0.8018
+Accuracy,0.951
+Precision,0.9196
+Recall,0.6102
+F1,0.7336
