@@ -38,14 +38,15 @@ class SaitsImputer:
     """Loads the saved SAITS checkpoint once and imputes batches of windows."""
 
     def __init__(self):
-        warnings.filterwarnings("ignore")
         from pypots.imputation import SAITS
-        self._saits = SAITS(
-            n_steps=N_STEPS, n_features=N_FEATURES, n_layers=2, d_model=256,
-            d_ffn=128, n_heads=4, d_k=64, d_v=64, dropout=0.1,
-            epochs=1, device="cpu",
-        )
-        self._saits.load(str(SAITS_CKPT))
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            self._saits = SAITS(
+                n_steps=N_STEPS, n_features=N_FEATURES, n_layers=2, d_model=256,
+                d_ffn=128, n_heads=4, d_k=64, d_v=64, dropout=0.1,
+                epochs=1, device="cpu",
+            )
+            self._saits.load(str(SAITS_CKPT))
 
     def impute_batch(self, arr: np.ndarray) -> np.ndarray:
         """arr: (n_windows, N_STEPS, N_FEATURES) float with NaN -> imputed array same shape."""
