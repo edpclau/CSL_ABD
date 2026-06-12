@@ -24,7 +24,14 @@ class Engine:
         return self.catch22.transform_batch(imputed)
 
     def windows_for_patient(self, patient_df: pd.DataFrame):
-        """Return (windows, bios) for a patient frame (timestamp-indexed, has Outcome)."""
-        windows = enumerate_windows(patient_df)
+        """Return (windows, bios) for a patient frame (timestamp-indexed, has Outcome).
+
+        Windows with zero observed timepoints are dropped: a patient with a data
+        gap can have a 48h window that falls entirely in the gap, which carries no
+        signal (and can't be padded/featurized). This never affects k=0 (always
+        near the anchor's data), so it leaves the test-set reproduction unchanged.
+        """
         bios = prepare_biomarkers(patient_df)
+        windows = [w for w in enumerate_windows(patient_df)
+                   if window_observed(bios, w.w_start, w.w_end).shape[0] > 0]
         return windows, bios
