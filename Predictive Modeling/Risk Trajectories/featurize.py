@@ -63,7 +63,13 @@ class Catch22Featurizer:
         self._tr = Catch22(col_names="str_feat", catch24=True, features=CATCH22_FEATURES)
 
     def transform_batch(self, arr: np.ndarray) -> pd.DataFrame:
-        """arr: (n_windows, N_STEPS, 45) imputed -> DataFrame (n_windows, 811)."""
+        """arr: (n_windows, N_STEPS, 45) imputed -> DataFrame (n_windows, 811).
+
+        NaN values in the output are expected for degenerate (constant) series
+        and are intentionally left for XGBoost to handle natively.
+        """
+        if arr.ndim != 3 or arr.shape[1:] != (N_STEPS, len(BIOMARKER_COLS)):
+            raise ValueError(f"expected (n,{N_STEPS},{len(BIOMARKER_COLS)}), got {arr.shape}")
         n = arr.shape[0]
         # build a (instance, time) MultiIndex panel with biomarker columns
         flat = arr.reshape(n * N_STEPS, len(BIOMARKER_COLS))
