@@ -32,6 +32,8 @@ def run(n_patients=60, feat_atol=1e-3, risk_atol=5e-3):
 
     # feature agreement
     common = [u for u in ord_uids if u in Xref.index]
+    assert len(common) == len(ord_uids), \
+        f"only {len(common)}/{len(ord_uids)} sampled uids found in X_test_control reference"
     diff = (Xk0.loc[common] - Xref.loc[common, FEATURE_LIST_811]).abs()
     feat_max = np.nanmax(diff.to_numpy())
     _v1 = Xk0.loc[common].to_numpy().ravel()
