@@ -1,8 +1,9 @@
 # featurize.py — window -> 811 catch22 features (faithful replication of training path).
 import sys
+import warnings
 import numpy as np
 import pandas as pd
-from config import BIOMARKER_COLS, PUPIL_MAP, N_STEPS, N_FEATURES, HELPERS_DIR
+from config import BIOMARKER_COLS, PUPIL_MAP, N_STEPS, N_FEATURES, HELPERS_DIR, SAITS_CKPT
 
 if str(HELPERS_DIR) not in sys.path:
     sys.path.insert(0, str(HELPERS_DIR))
@@ -31,3 +32,23 @@ def pad_window(obs_df: pd.DataFrame) -> pd.DataFrame:
     if padded.shape[0] != N_STEPS:
         raise ValueError(f"pad_window produced {padded.shape[0]} rows, expected {N_STEPS}")
     return padded
+
+
+class SaitsImputer:
+    """Loads the saved SAITS checkpoint once and imputes batches of windows."""
+
+    def __init__(self):
+        warnings.filterwarnings("ignore")
+        from pypots.imputation import SAITS
+        self._saits = SAITS(
+            n_steps=N_STEPS, n_features=N_FEATURES, n_layers=2, d_model=256,
+            d_ffn=128, n_heads=4, d_k=64, d_v=64, dropout=0.1,
+            epochs=1, device="cpu",
+        )
+        self._saits.load(str(SAITS_CKPT))
+
+    def impute_batch(self, arr: np.ndarray) -> np.ndarray:
+        """arr: (n_windows, N_STEPS, N_FEATURES) float with NaN -> imputed array same shape."""
+        if arr.ndim != 3 or arr.shape[1:] != (N_STEPS, N_FEATURES):
+            raise ValueError(f"expected (n,{N_STEPS},{N_FEATURES}), got {arr.shape}")
+        return self._saits.impute({"X": arr.astype(np.float32)})
