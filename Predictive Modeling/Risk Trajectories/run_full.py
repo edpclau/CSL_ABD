@@ -39,7 +39,11 @@ def _all_uids(limit):
 
 
 def _work_uids(limit, shard, nshards, resume):
-    pool = [u for u in _all_uids(limit) if u not in _existing_uids()] if resume else _all_uids(limit)
+    if resume:
+        done = _existing_uids()
+        pool = [u for u in _all_uids(limit) if u not in done]
+    else:
+        pool = _all_uids(limit)
     return pool[shard::nshards]   # round-robin balances long/short stays across workers
 
 
@@ -61,7 +65,8 @@ def parent(nshards, limit, resume):
 
     all_uids = _all_uids(limit)
     if resume:
-        missing = [u for u in all_uids if u not in _existing_uids()]
+        done = _existing_uids()
+        missing = [u for u in all_uids if u not in done]
         print(f"[parent] resume: {len(missing)} of {len(all_uids)} patients missing; "
               f"reusing existing shards; launching {nshards} workers", flush=True)
         if not missing:
