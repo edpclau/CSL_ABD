@@ -7,7 +7,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 import data_io
-from config import (OUT_DIR, RISK_PARQUET, FEATURE_LIST_811, COMPONENTS, OUTCOME_COMPONENTS_TEST)
+from config import (OUT_DIR, FEATURE_LIST_811, OUTCOME_COMPONENTS_TEST)
 from pipeline import Engine
 from model import load_models, predict_components, predict_ensemble, head_shap, meta_shap
 
@@ -20,6 +20,7 @@ def _chunks(seq, size):
 
 
 def run(uids=None, chunk_size=50, out_dir=None, log_every=1):
+    log_every = max(1, log_every)
     out_dir = OUT_DIR if out_dir is None else out_dir
     shap_dir = out_dir / "shap"
     risk_parquet = out_dir / "risk_trajectories.parquet"
