@@ -3,7 +3,7 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent          # .../Predictive Modeling/Risk Trajectories
 PM = SCRIPT_DIR.parent                                 # .../Predictive Modeling
-AIM1 = SCRIPT_DIR.parents[2]                            # .../Aim 1
+AIM1 = SCRIPT_DIR.parents[2]                            # .../Aim 1 — shared data root, one level ABOVE the repo root (Aim 1.1)
 
 # --- inputs ---
 NMB = AIM1 / "Deidentified Staged Data" / "nmb.csv"
@@ -42,7 +42,7 @@ CONFOUNDING_COLS = ["elapsed_time", "Outcome_timestamp", "spo2_measure", "picu_l
 BIAS_COLS = ["disch_yr", "race", "sex"]
 OUTCOME_COLS = ["BH", "EEG", "CT", "MRI", "Meds", "BHMeds",
                 "Haloperidol", "Olanzapine", "Dexmedetomidine", "Outcome"]
-DROP_COLS = set(CONFOUNDING_COLS + BIAS_COLS + OUTCOME_COLS + ["arrive_yr", "uid", "timestamp"])
+DROP_COLS = frozenset(CONFOUNDING_COLS + BIAS_COLS + OUTCOME_COLS + ["arrive_yr", "uid", "timestamp"])
 
 PUPIL_MAP = {"normal": 0, "one sluggish": 1, "both sluggish": 2,
              "one nonreactive": 3, "both nonreactive": 4}
@@ -68,3 +68,4 @@ for _feat in FEATURE_LIST_811:
     _p = _feat.rsplit("__", 1)[0]
     if _p not in _seen:
         _seen.add(_p); BIOMARKER_COLS.append(_p)
+del _seen, _feat, _p
