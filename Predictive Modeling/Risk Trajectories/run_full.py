@@ -6,12 +6,18 @@
 # shards of the test uids. Each worker runs the identical Engine/Catch22 path
 # (so values are bit-identical to the single-process driver) and writes:
 #   - per-patient SHAP to the SHARED artifacts/shap/<uid>.npz  (distinct uids, no conflict)
-#   - its risk rows to artifacts/risk_shard<i>.parquet
-# The parent then merges the shard parquets into artifacts/risk_trajectories.parquet.
+#   - its risk rows to artifacts/risk_{shard,resume}<i>.parquet
+# The parent then merges those into artifacts/risk_trajectories.parquet.
+#
+# "Done" is detected by the presence of a per-patient SHAP npz (written per
+# patient, so it survives crashes and the deletion of intermediate parquets).
+# --resume processes only uids without an npz and folds the new rows into the
+# existing merged parquet, so a crashed run can be finished without redoing work.
 #
 # Usage:
-#   python run_full.py [--nshards 6] [--limit N]      # parent (build + launch + merge)
-#   python run_full.py --worker I --nshards N [--limit N]   # worker (internal)
+#   python run_full.py [--nshards 6] [--limit N]            # full run (build + launch + merge)
+#   python run_full.py --resume [--nshards 8] [--limit N]   # finish only missing uids
+#   python run_full.py --worker I --nshards N [--resume]    # worker (internal)
 import argparse
 import json
 import subprocess
@@ -24,13 +30,13 @@ import pandas as pd
 import data_io
 from config import OUT_DIR, FEATURE_LIST_811
 
+MERGED = OUT_DIR / "risk_trajectories.parquet"
+SHAP_DIR = OUT_DIR / "shap"
+
 
 def _existing_uids():
-    """uids already written to any completed/partial risk_shard*.parquet."""
-    done = set()
-    for f in OUT_DIR.glob("risk_shard*.parquet"):
-        done |= set(pd.read_parquet(f, columns=["uid"])["uid"].astype(str).unique())
-    return done
+    """uids already computed == those with a per-patient SHAP npz on disk."""
+    return {f.stem for f in SHAP_DIR.glob("*.npz")} if SHAP_DIR.exists() else set()
 
 
 def _all_uids(limit):
@@ -58,24 +64,43 @@ def worker(shard, nshards, limit, resume):
     print(f"[worker {shard}] done", flush=True)
 
 
+def _merge(resume):
+    """Concat shard/resume parquets (+ existing merged file when resuming) -> MERGED."""
+    shard_files = sorted(OUT_DIR.glob("risk_shard*.parquet")) + sorted(OUT_DIR.glob("risk_resume*.parquet"))
+    parts = []
+    if resume and MERGED.exists():
+        parts.append(pd.read_parquet(MERGED))
+    parts += [pd.read_parquet(f) for f in shard_files]
+    merged = (pd.concat(parts, ignore_index=True)
+              .drop_duplicates(subset=["uid", "k"]).sort_values(["uid", "k"]).reset_index(drop=True))
+    tmp = OUT_DIR / "risk_trajectories.tmp.parquet"
+    merged.to_parquet(tmp)
+    for f in shard_files:
+        f.unlink()
+    tmp.replace(MERGED)
+    print(f"[parent] merged {len(shard_files)} shard files -> {MERGED}  "
+          f"({len(merged)} window-rows, {merged['uid'].nunique()} patients)", flush=True)
+    return MERGED
+
+
 def parent(nshards, limit, resume):
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "shap").mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "shap" / "feature_names.json").write_text(json.dumps(FEATURE_LIST_811))
+    SHAP_DIR.mkdir(parents=True, exist_ok=True)
+    (SHAP_DIR / "feature_names.json").write_text(json.dumps(FEATURE_LIST_811))
 
     all_uids = _all_uids(limit)
+    print(f"[parent] building compact test table for {len(all_uids)} patients ...", flush=True)
+    t0 = time.time()
+    data_io.build_test_raw(all_uids)                    # always rebuild (idempotent, ~60-90s)
+    print(f"[parent] test table built in {time.time()-t0:.0f}s", flush=True)
+
     if resume:
-        done = _existing_uids()
-        missing = [u for u in all_uids if u not in done]
+        missing = [u for u in all_uids if u not in _existing_uids()]
         print(f"[parent] resume: {len(missing)} of {len(all_uids)} patients missing; "
-              f"reusing existing shards; launching {nshards} workers", flush=True)
+              f"launching {nshards} workers", flush=True)
         if not missing:
-            print("[parent] nothing missing; merging existing shards", flush=True)
+            print("[parent] nothing missing; re-merging existing shards", flush=True)
     else:
-        print(f"[parent] building compact test table for {len(all_uids)} patients ...", flush=True)
-        t0 = time.time()
-        data_io.build_test_raw(all_uids)                # writes artifacts/test_raw.parquet once
-        print(f"[parent] test table built in {time.time()-t0:.0f}s; launching {nshards} workers", flush=True)
+        print(f"[parent] full run; launching {nshards} workers", flush=True)
 
     procs = []
     for i in range(nshards):
@@ -96,18 +121,10 @@ def parent(nshards, limit, resume):
         if rc != 0:
             failed.append(i)
     if failed:
-        raise SystemExit(f"workers failed: {failed} (see artifacts/shard*.log)")
+        tag = "resume" if resume else "shard"
+        raise SystemExit(f"workers failed: {failed} (see artifacts/{tag}*.log)")
 
-    shard_files = sorted(OUT_DIR.glob("risk_shard*.parquet")) + sorted(OUT_DIR.glob("risk_resume*.parquet"))
-    merged = pd.concat([pd.read_parquet(f) for f in shard_files], ignore_index=True)
-    merged = merged.drop_duplicates(subset=["uid", "k"]).sort_values(["uid", "k"]).reset_index(drop=True)
-    out = OUT_DIR / "risk_trajectories.parquet"
-    merged.to_parquet(out)
-    for f in shard_files:
-        f.unlink()
-    print(f"[parent] merged {len(shard_files)} shard files -> {out}  "
-          f"({len(merged)} window-rows, {merged['uid'].nunique()} patients)", flush=True)
-    return out
+    return _merge(resume)
 
 
 if __name__ == "__main__":
@@ -116,7 +133,7 @@ if __name__ == "__main__":
     ap.add_argument("--worker", type=int, default=None)
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--resume", action="store_true",
-                    help="only process uids missing from existing risk_shard*.parquet")
+                    help="only process uids without a SHAP npz; fold into existing merged parquet")
     args = ap.parse_args()
     if args.worker is not None:
         worker(args.worker, args.nshards, args.limit, args.resume)
