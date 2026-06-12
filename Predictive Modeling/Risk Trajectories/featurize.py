@@ -3,7 +3,7 @@ import sys
 import warnings
 import numpy as np
 import pandas as pd
-from config import BIOMARKER_COLS, PUPIL_MAP, N_STEPS, N_FEATURES, HELPERS_DIR, SAITS_CKPT
+from config import BIOMARKER_COLS, PUPIL_MAP, N_STEPS, N_FEATURES, HELPERS_DIR, SAITS_CKPT, CATCH22_FEATURES, FEATURE_LIST_811
 
 if str(HELPERS_DIR) not in sys.path:
     sys.path.insert(0, str(HELPERS_DIR))
@@ -53,3 +53,22 @@ class SaitsImputer:
         if arr.ndim != 3 or arr.shape[1:] != (N_STEPS, N_FEATURES):
             raise ValueError(f"expected (n,{N_STEPS},{N_FEATURES}), got {arr.shape}")
         return self._saits.impute({"X": arr.astype(np.float32)})
+
+
+class Catch22Featurizer:
+    """Batch catch22 over windows -> 811-column frame (feature_list order)."""
+
+    def __init__(self):
+        from sktime.transformations.panel.catch22 import Catch22
+        self._tr = Catch22(col_names="str_feat", catch24=True, features=CATCH22_FEATURES)
+
+    def transform_batch(self, arr: np.ndarray) -> pd.DataFrame:
+        """arr: (n_windows, N_STEPS, 45) imputed -> DataFrame (n_windows, 811)."""
+        n = arr.shape[0]
+        # build a (instance, time) MultiIndex panel with biomarker columns
+        flat = arr.reshape(n * N_STEPS, len(BIOMARKER_COLS))
+        idx = pd.MultiIndex.from_product([range(n), range(N_STEPS)], names=["instance", "time"])
+        panel = pd.DataFrame(flat, index=idx, columns=BIOMARKER_COLS)
+        feats = self._tr.fit_transform(panel)               # (n, 990) named "<bio>__<feat>"
+        feats = feats.reindex(columns=FEATURE_LIST_811)     # select + order the 811
+        return feats
