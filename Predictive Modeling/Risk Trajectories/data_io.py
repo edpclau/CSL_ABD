@@ -18,7 +18,6 @@ def build_test_raw(uids, out_path=None, chunksize=200_000) -> pd.DataFrame:
     Columns: BIOMARKER_COLS + Outcome; index reset; `timestamp` as float hours.
     """
     out_path = _RAW_PARQUET if out_path is None else out_path
-    out_path = _ensure_path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     keep = set(map(str, uids))
     cols = set(_KEEP)
@@ -50,8 +49,3 @@ def iter_patient_frames(raw: pd.DataFrame, chunk_uids=None):
         pdf = pdf.drop(columns=["timestamp"]).sort_index()
         yield uid, pdf
 
-
-def _ensure_path(p):
-    """Accept str or Path-like, return pathlib.Path."""
-    from pathlib import Path
-    return Path(p)
