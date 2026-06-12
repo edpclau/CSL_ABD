@@ -1,5 +1,5 @@
 artifacts/shap/
 artifacts/*.parquet
-artifacts/shard*.log
+artifacts/*.log
 __pycache__/
 .pytest_cache/
