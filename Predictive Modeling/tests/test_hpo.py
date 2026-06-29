@@ -1,6 +1,8 @@
-from hpo import config_label
 import pandas as pd
+from sklearn.datasets import make_classification
+
 import hpo
+from hpo import config_label
 
 
 def test_config_label_full():
@@ -65,9 +67,6 @@ def test_force_retune_calls_tuner_again(tmp_path, monkeypatch):
     out = hpo.get_xgb_params("DAG", "full", X, y, cache_path=str(cache), force_retune=True)
     assert calls["n"] == 2
     assert out == {"max_depth": 2}
-
-
-from sklearn.datasets import make_classification
 
 
 def test_tune_xgb_smoke_returns_param_dict():

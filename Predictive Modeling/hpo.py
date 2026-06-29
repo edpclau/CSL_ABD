@@ -4,6 +4,16 @@ Tuning uses Optuna over a StratifiedKFold loop scoring average_precision on
 TRAINING data only. See docs/superpowers/specs/2026-06-29-xgb-hyperparameter-optimization-design.md
 """
 
+import json
+import os
+from datetime import datetime
+
+import numpy as np
+import optuna
+import xgboost
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import average_precision_score
+
 FIXED_DEFAULTS = dict(objective="binary:logistic", random_state=42, eval_metric="aucpr")
 
 
@@ -14,11 +24,6 @@ def config_label(remove_drugs, remove_interventions):
     if remove_drugs:
         return "no_drugs"
     return "full"
-
-
-import json
-import os
-from datetime import datetime
 
 
 def _load_cache(path):
@@ -34,13 +39,6 @@ def _save_cache(path, cache):
         os.makedirs(parent, exist_ok=True)
     with open(path, "w") as f:
         json.dump(cache, f, indent=2)
-
-
-import numpy as np
-import optuna
-import xgboost
-from sklearn.model_selection import StratifiedKFold
-from sklearn.metrics import average_precision_score
 
 
 def tune_xgb(X, y, n_trials=50, cv=5, seed=42):
