@@ -36,9 +36,53 @@ def _save_cache(path, cache):
         json.dump(cache, f, indent=2)
 
 
+import numpy as np
+import optuna
+import xgboost
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import average_precision_score
+
+
 def tune_xgb(X, y, n_trials=50, cv=5, seed=42):
-    """Placeholder — full implementation in Task 4."""
-    raise NotImplementedError("tune_xgb not yet implemented")
+    """Optuna TPE search (MedianPruner) maximizing CV average_precision.
+
+    Uses TRAINING data only. Returns study.best_params.
+    """
+    Xv = X.values if hasattr(X, "values") else np.asarray(X)
+    yv = np.asarray(y)
+
+    def objective(trial):
+        params = {
+            "n_estimators": trial.suggest_int("n_estimators", 100, 800),
+            "max_depth": trial.suggest_int("max_depth", 3, 10),
+            "learning_rate": trial.suggest_float("learning_rate", 1e-3, 0.3, log=True),
+            "subsample": trial.suggest_float("subsample", 0.5, 1.0),
+            "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 1.0),
+            "min_child_weight": trial.suggest_int("min_child_weight", 1, 10),
+            "reg_lambda": trial.suggest_float("reg_lambda", 1e-3, 10.0, log=True),
+            "reg_alpha": trial.suggest_float("reg_alpha", 1e-3, 10.0, log=True),
+            "gamma": trial.suggest_float("gamma", 0.0, 5.0),
+        }
+        skf = StratifiedKFold(n_splits=cv, shuffle=True, random_state=seed)
+        scores = []
+        for fold, (tr, va) in enumerate(skf.split(Xv, yv)):
+            model = xgboost.XGBClassifier(**FIXED_DEFAULTS, **params)
+            model.fit(Xv[tr], yv[tr])
+            prob = model.predict_proba(Xv[va])[:, 1]
+            scores.append(average_precision_score(yv[va], prob))
+            trial.report(float(np.mean(scores)), fold)
+            if trial.should_prune():
+                raise optuna.TrialPruned()
+        return float(np.mean(scores))
+
+    optuna.logging.set_verbosity(optuna.logging.WARNING)
+    study = optuna.create_study(
+        direction="maximize",
+        sampler=optuna.samplers.TPESampler(seed=seed),
+        pruner=optuna.pruners.MedianPruner(),
+    )
+    study.optimize(objective, n_trials=n_trials)
+    return study.best_params
 
 
 def get_xgb_params(dag_name, cfg_label, X, y, cache_path,

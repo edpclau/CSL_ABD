@@ -65,3 +65,33 @@ def test_force_retune_calls_tuner_again(tmp_path, monkeypatch):
     out = hpo.get_xgb_params("DAG", "full", X, y, cache_path=str(cache), force_retune=True)
     assert calls["n"] == 2
     assert out == {"max_depth": 2}
+
+
+from sklearn.datasets import make_classification
+
+
+def test_tune_xgb_smoke_returns_param_dict():
+    Xa, ya = make_classification(
+        n_samples=120, n_features=8, weights=[0.8, 0.2], random_state=0
+    )
+    X = pd.DataFrame(Xa, columns=[f"f{i}" for i in range(8)])
+    y = pd.Series(ya)
+    params = hpo.tune_xgb(X, y, n_trials=4, cv=3, seed=42)
+    assert isinstance(params, dict)
+    assert params  # non-empty
+    allowed = {
+        "n_estimators", "max_depth", "learning_rate", "subsample",
+        "colsample_bytree", "min_child_weight", "reg_lambda", "reg_alpha", "gamma",
+    }
+    assert set(params).issubset(allowed)
+
+
+def test_tune_xgb_is_deterministic():
+    Xa, ya = make_classification(
+        n_samples=120, n_features=8, weights=[0.8, 0.2], random_state=0
+    )
+    X = pd.DataFrame(Xa, columns=[f"f{i}" for i in range(8)])
+    y = pd.Series(ya)
+    p1 = hpo.tune_xgb(X, y, n_trials=4, cv=3, seed=42)
+    p2 = hpo.tune_xgb(X, y, n_trials=4, cv=3, seed=42)
+    assert p1 == p2
