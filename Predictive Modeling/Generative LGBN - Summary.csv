@@ -1,7 +1,0 @@
-Experiment,Model,Best DAG,Average Precision,AUROC,ECE,# Features
-All Features,Generative LGBN,Clinician Consensus $\cap$ PCMB,"0.59 (0.55, 0.64)","0.82 (0.79, 0.84)",0.078,20
-All Features,XGB,Control,"0.81 (0.78, 0.84)","0.93 (0.91, 0.95)",0.089,811
-No Drugs,Generative LGBN,Clinician Consensus $\cap$ PCMB,"0.57 (0.52, 0.61)","0.80 (0.77, 0.83)",0.098,14
-No Drugs,XGB,Control,"0.80 (0.77, 0.83)","0.92 (0.91, 0.94)",0.090,624
-No Drugs or Interventions,Generative LGBN,Clinician Consensus $\cap$ PCMB,"0.57 (0.52, 0.61)","0.80 (0.77, 0.83)",0.098,14
-No Drugs or Interventions,XGB,Control,"0.78 (0.75, 0.82)","0.92 (0.90, 0.93)",0.093,521
