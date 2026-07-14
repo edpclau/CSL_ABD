@@ -1,0 +1,3 @@
+[NbConvertApp] Converting notebook DAG Parameterization - Year Sensitivity.fixedrun.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 1061093 bytes to biomarker_counts_fixed/DAG Parameterization - Year Sensitivity.executed.ipynb

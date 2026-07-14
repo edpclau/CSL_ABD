@@ -1,0 +1,56 @@
+Model 1,Model 2,Avg Precision Model 1,Avg Precision Model 2,P-value,Benchmark,Samples Mean,Samples Std
+Control,Correlation,0.7838,0.7453,0.000e+00,0.03854692161895923,0.0094,0.0073
+Control,Simplified Clinician Consensus $\cup$ Simplified PCMB,0.7838,0.7608,3.600e-02,0.023079429112978556,0.0087,0.0068
+Control,Simplified Clinician Consensus $\cup$ Simplified Golem,0.7838,0.7621,3.200e-02,0.0217502725608808,0.0084,0.0061
+ntrol,Simplified Golem $\cup$ Simplified PCMB,0.7838,0.7664,9.600e-02,0.017474884370095034,0.0083,0.0064Co
+Control,Simplified Clinician Consensus,0.7838,0.7346,0.000e+00,0.04927068480308483,0.0096,0.0072
+Control,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7838,0.7273,0.000e+00,0.056585579137338304,0.0090,0.0067
+Control,Simplified PCMB,0.7838,0.7639,6.800e-02,0.019965409908559106,0.0085,0.0065
+Control,Simplified Golem,0.7838,0.7581,1.400e-02,0.025762521189434895,0.0087,0.0065
+Control,Simplified Golem $\cap$ Simplified PCMB,0.7838,0.7136,0.000e+00,0.07028088318829906,0.0104,0.0079
+Control,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7838,0.6615,0.000e+00,0.12234392054398224,0.0120,0.0093
+Correlation,Simplified Clinician Consensus $\cup$ Simplified PCMB,0.7453,0.7608,2.060e-01,0.015467492505980673,0.0098,0.0074
+Correlation,Simplified Clinician Consensus $\cup$ Simplified Golem,0.7453,0.7621,1.920e-01,0.016796649058078428,0.0101,0.0078
+Correlation,Simplified Golem $\cup$ Simplified PCMB,0.7453,0.7664,9.600e-02,0.021072037248864195,0.0097,0.0076
+Correlation,Simplified Clinician Consensus,0.7453,0.7346,4.050e-01,0.010723763184125601,0.0101,0.0077
+Correlation,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7453,0.7273,1.490e-01,0.018038657518379075,0.0098,0.0077
+Correlation,Simplified PCMB,0.7453,0.7639,1.270e-01,0.018581511710400123,0.0097,0.0074
+Correlation,Simplified Golem,0.7453,0.7581,3.060e-01,0.012784400429524334,0.0098,0.0074
+Correlation,Simplified Golem $\cap$ Simplified PCMB,0.7453,0.7136,2.500e-02,0.03173396156933983,0.0112,0.0087
+Correlation,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7453,0.6615,0.000e+00,0.08379699892502301,0.0128,0.0098
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Clinician Consensus $\cup$ Simplified Golem,0.7608,0.7621,8.930e-01,0.0013291565520977544,0.0086,0.0065
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Golem $\cup$ Simplified PCMB,0.7608,0.7664,6.250e-01,0.0056045447428835216,0.0089,0.0067
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Clinician Consensus,0.7608,0.7346,4.000e-03,0.026191255690106274,0.0078,0.0057
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7608,0.7273,1.000e-03,0.03350615002435975,0.0078,0.0059
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified PCMB,0.7608,0.7639,7.320e-01,0.0031140192044194492,0.0072,0.0054
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Golem,0.7608,0.7581,8.210e-01,0.0026830920764563393,0.0091,0.0069
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Golem $\cap$ Simplified PCMB,0.7608,0.7136,0.000e+00,0.047201454075320504,0.0088,0.0069
+Simplified Clinician Consensus $\cup$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7608,0.6615,0.000e+00,0.09926449143100369,0.0111,0.0085
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Golem $\cup$ Simplified PCMB,0.7621,0.7664,6.360e-01,0.004275388190785767,0.0072,0.0054
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Clinician Consensus,0.7621,0.7346,1.300e-02,0.02752041224220403,0.0091,0.0069
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7621,0.7273,0.000e+00,0.0348353065764575,0.0085,0.0064
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified PCMB,0.7621,0.7639,8.680e-01,0.0017848626523216948,0.0084,0.0064
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Golem,0.7621,0.7581,6.350e-01,0.004012248628554094,0.0067,0.0051
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Golem $\cap$ Simplified PCMB,0.7621,0.7136,0.000e+00,0.04853061062741826,0.0097,0.0071
+Simplified Clinician Consensus $\cup$ Simplified Golem,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7621,0.6615,0.000e+00,0.10059364798310144,0.0120,0.0085
+Simplified Golem $\cup$ Simplified PCMB,Simplified Clinician Consensus,0.7664,0.7346,5.000e-03,0.031795800432989796,0.0092,0.0071
+Simplified Golem $\cup$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7664,0.7273,0.000e+00,0.03911069476724327,0.0087,0.0067
+Simplified Golem $\cup$ Simplified PCMB,Simplified PCMB,0.7664,0.7639,7.900e-01,0.0024905255384640723,0.0076,0.0057
+Simplified Golem $\cup$ Simplified PCMB,Simplified Golem,0.7664,0.7581,3.480e-01,0.00828763681933986,0.0071,0.0054
+Simplified Golem $\cup$ Simplified PCMB,Simplified Golem $\cap$ Simplified PCMB,0.7664,0.7136,0.000e+00,0.052805998818204025,0.0097,0.0073
+Simplified Golem $\cup$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7664,0.6615,0.000e+00,0.10486903617388721,0.0116,0.0085
+Simplified Clinician Consensus,Simplified Clinician Consensus $\cap$ Simplified PCMB,0.7346,0.7273,4.650e-01,0.0073148943342534745,0.0078,0.0060
+Simplified Clinician Consensus,Simplified PCMB,0.7346,0.7639,6.000e-03,0.029305274894525724,0.0087,0.0067
+Simplified Clinician Consensus,Simplified Golem,0.7346,0.7581,6.800e-02,0.023508163613649935,0.0100,0.0077
+Simplified Clinician Consensus,Simplified Golem $\cap$ Simplified PCMB,0.7346,0.7136,9.200e-02,0.02101019838521423,0.0100,0.0074
+Simplified Clinician Consensus,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7346,0.6615,0.000e+00,0.07307323574089741,0.0107,0.0082
+Simplified Clinician Consensus $\cap$ Simplified PCMB,Simplified PCMB,0.7273,0.7639,0.000e+00,0.0366201692287792,0.0080,0.0061
+Simplified Clinician Consensus $\cap$ Simplified PCMB,Simplified Golem,0.7273,0.7581,6.000e-03,0.03082305794790341,0.0091,0.0070
+Simplified Clinician Consensus $\cap$ Simplified PCMB,Simplified Golem $\cap$ Simplified PCMB,0.7273,0.7136,2.570e-01,0.013695304050960755,0.0097,0.0074
+Simplified Clinician Consensus $\cap$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7273,0.6615,0.000e+00,0.06575834140664394,0.0108,0.0081
+Simplified PCMB,Simplified Golem,0.7639,0.7581,5.880e-01,0.0057971112808757885,0.0085,0.0065
+Simplified PCMB,Simplified Golem $\cap$ Simplified PCMB,0.7639,0.7136,0.000e+00,0.05031547327973995,0.0085,0.0067
+Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7639,0.6615,0.000e+00,0.10237851063542314,0.0117,0.0086
+Simplified Golem,Simplified Golem $\cap$ Simplified PCMB,0.7581,0.7136,0.000e+00,0.044518361998864164,0.0096,0.0072
+Simplified Golem,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7581,0.6615,0.000e+00,0.09658139935454735,0.0115,0.0088
+Simplified Golem $\cap$ Simplified PCMB,Simplified Clinician Consensus $\cap$ Simplified Golem,0.7136,0.6615,0.000e+00,0.052063037355683184,0.0110,0.0080
