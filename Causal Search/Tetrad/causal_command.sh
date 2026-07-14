@@ -9,7 +9,7 @@ java\
     --delimiter comma\
     --numCategories 2\
     --missing-marker "*"\
-    --algorithm boss-fci\
+    --algorithm pcmb\
     --score dg-bic-score\
     --test dg-lr-test\
     --fractionResampleSize 10 \
