@@ -6,6 +6,13 @@ Causal_gnn_failed/
 Datasets/
 Figures/
 .vscode/
+.DS_Store/
+.gitattributes/
+.gitignore/
+docs/superpowers/
+Causal Effect Estimation/
+
+
 
 #python artifacts
 __pycache__/
