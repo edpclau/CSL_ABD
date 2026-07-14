@@ -1,0 +1,20 @@
+DAG,Avg Precision LGBN,Avg Precision XGB,P-value
+Control,0.4790,0.8006,0.000e+00
+Correlation,0.5404,0.7469,0.000e+00
+Clinician Consensus $\cup$ Golem,0.5368,0.7683,0.000e+00
+Simplified Clinician Consensus $\cup$ Simplified PCMB,0.5190,0.7711,0.000e+00
+Simplified Clinician Consensus $\cup$ Simplified Golem,0.5038,0.7744,0.000e+00
+Clinician Consensus $\cup$ PCMB,0.5204,0.7644,0.000e+00
+Simplified Golem $\cup$ Simplified PCMB,0.4858,0.7831,0.000e+00
+Clinician Consensus,0.5316,0.7637,0.000e+00
+Simplified Clinician Consensus,0.5285,0.7527,0.000e+00
+Clinician Consensus $\cap$ PCMB,0.5662,0.6590,0.000e+00
+Golem,0.2587,0.5441,0.000e+00
+PCMB,0.5573,0.6865,0.000e+00
+Simplified Clinician Consensus $\cap$ Simplified PCMB,0.5229,0.7619,0.000e+00
+Simplified PCMB,0.5138,0.7790,0.000e+00
+Clinician Consensus $\cap$ Golem,0.1760,0.2515,1.000e-03
+Simplified Golem,0.5225,0.7797,0.000e+00
+Golem $\cup$ PCMB,0.5550,0.7285,0.000e+00
+Simplified Golem $\cap$ Simplified PCMB,0.5537,0.7632,0.000e+00
+Simplified Clinician Consensus $\cap$ Simplified Golem,0.5696,0.7363,0.000e+00
