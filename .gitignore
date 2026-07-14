@@ -6,9 +6,7 @@ Causal_gnn_failed/
 Datasets/
 Figures/
 .vscode/
-.DS_Store/
-.gitattributes/
-.gitignore/
+.DS_Store
 docs/superpowers/
 Causal Effect Estimation/
 
