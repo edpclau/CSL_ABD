@@ -1,6 +1,6 @@
-,Outcome,Peds Coma Score,DBP,Sodium,Ventilated
+,Ventilated,Peds Coma Score,Sodium,Outcome,DBP
+Ventilated,0.0,0.0,0.0,1.0,0.0
+Peds Coma Score,0.0,0.0,0.0,1.0,0.0
+Sodium,0.0,0.0,0.0,1.0,0.0
 Outcome,0.0,0.0,0.0,0.0,0.0
-Peds Coma Score,1.0,0.0,0.0,0.0,0.0
-DBP,1.0,0.0,0.0,0.0,0.0
-Sodium,1.0,0.0,0.0,0.0,0.0
-Ventilated,1.0,0.0,0.0,0.0,0.0
+DBP,0.0,0.0,0.0,1.0,0.0

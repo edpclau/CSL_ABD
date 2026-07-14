@@ -1,0 +1,57 @@
+column_name,clinical_type,intervention_type,data_type,min_value,max_value
+Pulse,vital,,numerical,0.0,350.0
+Respiratory Rate,vital,,numerical,0.0,150.0
+SBP,vital,,numerical,0.0,300.0
+DBP,vital,,numerical,0.0,200.0
+MBP,vital,,numerical,0.0,160.0
+SpO2,vital,,numerical,0.0,100.0
+Temperature,vital,,numerical,0.0,46.0
+Base deficit,lab,,numerical,-30.0,0.0
+Base excess,lab,,numerical,0.0,30.0
+Bicarbonate,lab,,numerical,0.0,80.0
+Blood urea nitrogen,lab,,numerical,0.0,200.0
+Chloride,lab,,numerical,60.0,190.0
+C-Reactive Protein,lab,,numerical,0.0,100.0
+Creatinine,lab,,numerical,0.1,25.0
+Glucose,lab,,numerical,0.0,2000.0
+Hemoglobin,lab,,numerical,0.0,30.0
+INR,lab,,numerical,0.0,25.0
+Lactate,lab,,numerical,0.0,30.0
+pCO2,lab,,numerical,5.0,150.0
+pH,lab,,numerical,6.0,8.0
+Platelets,lab,,numerical,0.0,5000.0
+Potassium,lab,,numerical,0.05,12.0
+Procalcitonin,lab,,numerical,0.0,250.0
+PTT,lab,,numerical,0.0,250.0
+Sodium,lab,,numerical,80.0,215.0
+White blood cell count,lab,,numerical,0.0,300.0
+Peds Coma Score,score,,numerical,3.0,15.0
+Pupillary Reaction,score,,categorical,,
+Weight,demographic,,numerical,0.0,300.0
+spo2_measure,demographic,,categorical,,
+Cisatracurium,intervention,medication,boolean,0.0,1.0
+Dobutamine,intervention,medication,boolean,0.0,1.0
+Dopamine,intervention,medication,boolean,0.0,1.0
+Epinephrine,intervention,medication,boolean,0.0,1.0
+Fentanyl,intervention,medication,boolean,0.0,1.0
+Hydromorphone,intervention,medication,boolean,0.0,1.0
+Lorazepam,intervention,medication,boolean,0.0,1.0
+Midazolam,intervention,medication,boolean,0.0,1.0
+Milrinone,intervention,medication,boolean,0.0,1.0
+Morphine,intervention,medication,boolean,0.0,1.0
+Norepinephrine,intervention,medication,boolean,0.0,1.0
+Haloperidol,intervention,medication,numerical,,
+Olanzapine,intervention,medication,numerical,,
+Dexmedetomidine,intervention,medication,numerical,,
+Meds,intervention,medication,numerical,,
+BHMeds,intervention,medication,numerical,,
+CRRT Therapy Type,intervention,procedure,boolean,0.0,1.0
+ECMO Type,intervention,procedure,boolean,0.0,1.0
+Endotracheal tube,intervention,procedure,boolean,0.0,1.0
+Ventilated,intervention,procedure,boolean,0.0,1.0
+Ventilator Make/Model,intervention,procedure,categorical,,
+CT,intervention,imaging,numerical,,
+MRI,intervention,imaging,numerical,,
+EEG,intervention,imaging,numerical,,
+BH,intervention,therapy,numerical,,
+Outcome,outcome,,numerical,,

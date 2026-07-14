@@ -1,0 +1,67 @@
+DAG,Metric,Year A,Year B,AUPRC (A),AUPRC (B),|Δ|,p-value,Significant (p<0.05),AUROC (A),AUROC (B)
+Control,AUPRC,2020,2021,0.794,0.798,0.004,0.925,False,,
+Control,AUROC,2020,2021,,,0.026,0.214,False,0.908,0.934
+Control,AUPRC,2020,2022,0.794,0.801,0.007,0.854,False,,
+Control,AUROC,2020,2022,,,0.018,0.391,False,0.908,0.927
+Control,AUPRC,2021,2022,0.798,0.801,0.003,0.941,False,,
+Control,AUROC,2021,2022,,,0.007,0.719,False,0.934,0.927
+Correlation,AUPRC,2020,2021,0.749,0.757,0.007,0.886,False,,
+Correlation,AUROC,2020,2021,,,0.01,0.67,False,0.885,0.895
+Correlation,AUPRC,2020,2022,0.749,0.781,0.031,0.492,False,,
+Correlation,AUROC,2020,2022,,,0.022,0.391,False,0.885,0.907
+Correlation,AUPRC,2021,2022,0.757,0.781,0.024,0.604,False,,
+Correlation,AUROC,2021,2022,,,0.012,0.639,False,0.895,0.907
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUPRC,2020,2021,0.777,0.774,0.003,0.955,False,,
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUROC,2020,2021,,,0.019,0.345,False,0.903,0.922
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUPRC,2020,2022,0.777,0.78,0.003,0.944,False,,
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUROC,2020,2022,,,0.016,0.466,False,0.903,0.919
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUPRC,2021,2022,0.774,0.78,0.006,0.891,False,,
+Simplified Clinician Consensus $\cup$ Simplified PCMB,AUROC,2021,2022,,,0.003,0.897,False,0.922,0.919
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUPRC,2020,2021,0.762,0.793,0.03,0.502,False,,
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUROC,2020,2021,,,0.017,0.447,False,0.902,0.919
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUPRC,2020,2022,0.762,0.791,0.028,0.546,False,,
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUROC,2020,2022,,,0.021,0.356,False,0.902,0.923
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUPRC,2021,2022,0.793,0.791,0.002,0.958,False,,
+Simplified Clinician Consensus $\cup$ Simplified Golem,AUROC,2021,2022,,,0.004,0.842,False,0.919,0.923
+Simplified Golem $\cup$ Simplified PCMB,AUPRC,2020,2021,0.767,0.79,0.024,0.599,False,,
+Simplified Golem $\cup$ Simplified PCMB,AUROC,2020,2021,,,0.031,0.157,False,0.9,0.931
+Simplified Golem $\cup$ Simplified PCMB,AUPRC,2020,2022,0.767,0.795,0.028,0.539,False,,
+Simplified Golem $\cup$ Simplified PCMB,AUROC,2020,2022,,,0.028,0.217,False,0.9,0.928
+Simplified Golem $\cup$ Simplified PCMB,AUPRC,2021,2022,0.79,0.795,0.004,0.933,False,,
+Simplified Golem $\cup$ Simplified PCMB,AUROC,2021,2022,,,0.003,0.909,False,0.931,0.928
+Simplified Clinician Consensus,AUPRC,2020,2021,0.747,0.74,0.008,0.865,False,,
+Simplified Clinician Consensus,AUROC,2020,2021,,,0.006,0.782,False,0.893,0.899
+Simplified Clinician Consensus,AUPRC,2020,2022,0.747,0.763,0.016,0.753,False,,
+Simplified Clinician Consensus,AUROC,2020,2022,,,0.022,0.339,False,0.893,0.915
+Simplified Clinician Consensus,AUPRC,2021,2022,0.74,0.763,0.023,0.624,False,,
+Simplified Clinician Consensus,AUROC,2021,2022,,,0.016,0.508,False,0.899,0.915
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUPRC,2020,2021,0.752,0.706,0.046,0.324,False,,
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUROC,2020,2021,,,0.008,0.737,False,0.891,0.883
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUPRC,2020,2022,0.752,0.774,0.022,0.623,False,,
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUROC,2020,2022,,,0.022,0.356,False,0.891,0.912
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUPRC,2021,2022,0.706,0.774,0.068,0.156,False,,
+Simplified Clinician Consensus $\cap$ Simplified PCMB,AUROC,2021,2022,,,0.03,0.249,False,0.883,0.912
+Simplified PCMB,AUPRC,2020,2021,0.755,0.788,0.032,0.472,False,,
+Simplified PCMB,AUROC,2020,2021,,,0.031,0.158,False,0.894,0.925
+Simplified PCMB,AUPRC,2020,2022,0.755,0.797,0.042,0.373,False,,
+Simplified PCMB,AUROC,2020,2022,,,0.018,0.461,False,0.894,0.912
+Simplified PCMB,AUPRC,2021,2022,0.788,0.797,0.01,0.809,False,,
+Simplified PCMB,AUROC,2021,2022,,,0.013,0.587,False,0.925,0.912
+Simplified Golem,AUPRC,2020,2021,0.741,0.785,0.044,0.333,False,,
+Simplified Golem,AUROC,2020,2021,,,0.028,0.193,False,0.89,0.919
+Simplified Golem,AUPRC,2020,2022,0.741,0.81,0.069,0.138,False,,
+Simplified Golem,AUROC,2020,2022,,,0.049,0.026,True,0.89,0.939
+Simplified Golem,AUPRC,2021,2022,0.785,0.81,0.025,0.567,False,,
+Simplified Golem,AUROC,2021,2022,,,0.02,0.351,False,0.919,0.939
+Simplified Golem $\cap$ Simplified PCMB,AUPRC,2020,2021,0.736,0.72,0.016,0.746,False,,
+Simplified Golem $\cap$ Simplified PCMB,AUROC,2020,2021,,,0.03,0.205,False,0.878,0.907
+Simplified Golem $\cap$ Simplified PCMB,AUPRC,2020,2022,0.736,0.732,0.004,0.937,False,,
+Simplified Golem $\cap$ Simplified PCMB,AUROC,2020,2022,,,0.026,0.299,False,0.878,0.904
+Simplified Golem $\cap$ Simplified PCMB,AUPRC,2021,2022,0.72,0.732,0.012,0.801,False,,
+Simplified Golem $\cap$ Simplified PCMB,AUROC,2021,2022,,,0.003,0.877,False,0.907,0.904
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUPRC,2020,2021,0.696,0.665,0.031,0.578,False,,
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUROC,2020,2021,,,0.006,0.829,False,0.868,0.862
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUPRC,2020,2022,0.696,0.662,0.034,0.523,False,,
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUROC,2020,2022,,,0.009,0.75,False,0.868,0.877
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUPRC,2021,2022,0.665,0.662,0.003,0.953,False,,
+Simplified Clinician Consensus $\cap$ Simplified Golem,AUROC,2021,2022,,,0.015,0.577,False,0.862,0.877
