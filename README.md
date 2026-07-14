@@ -1,5 +1,3 @@
-# Causal Structure Learning for Acquired Acute Brain Dysfunction in the PICU
-
 This repository contains the analysis artifacts for a study evaluating whether clinician expertise and causal structure learning can generate clinically grounded hypotheses about relationships relevant to acquired acute brain dysfunction (ABD) in critically ill children and support more parsimonious predictive models. Hypothesized relationships derived from clinician consensus, GOLEM, and PC-MB are represented as directed acyclic graphs (DAGs), then evaluated through DAG-guided feature selection using Linear Gaussian Bayesian Networks and XGBoost.
 
 The project addresses two questions:
