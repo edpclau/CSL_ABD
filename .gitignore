@@ -6,3 +6,8 @@ Causal_gnn_failed/
 Datasets/
 Figures/
 .vscode/
+
+#python artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
